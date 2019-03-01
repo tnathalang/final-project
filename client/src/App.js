@@ -24,7 +24,8 @@ class App extends Component {
       .then(y => {
         this.setState({ users: y.data.users })
       })
-
+//can do a console log for visual 
+console.log(this.state);
   }
 
   render() {
