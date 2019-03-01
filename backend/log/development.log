@@ -3372,3 +3372,430 @@ Processing by GraphqlController#execute as JSON
 Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:23:38 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 64ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:24:17 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:24:20 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:24:45 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:51:47 +0000
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:52:08 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:52:17 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:52:17 +0000
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:52:22 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-01 21:59:15 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (205.9ms)
+Completed 200 OK in 268ms (Views: 248.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/graphiql/rails/application-6f03c7a92432765b0fbe671bfb7a292ee6c37e6704b6e6ac95587e45676bbf72.js" for 10.0.2.2 at 2019-03-01 21:59:15 +0000
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 21:59:16 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 100ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:00:13 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  create_user{\n    name: \"Riki Confusion\"\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  create_user{\n    name: \"Riki Confusion\"\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:00:24 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  create_user {\n    name: \"Riki Confusion\"\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  create_user {\n    name: \"Riki Confusion\"\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:01:12 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation {\n  createUser(input: {\n    name: \"Riki confusion\",\n  }) {\n    user {\n      id\n      name\n\n    }\n    errors\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"mutation {\n  createUser(input: {\n    name: \"Riki confusion\",\n  }) {\n    user {\n      id\n      name\n\n    }\n    errors\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Riki confusion"], ["created_at", "2019-03-01 22:01:12.970749"], ["updated_at", "2019-03-01 22:01:12.970749"]]
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:01:38 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom confusion\",\n  }) `\n  }\n", "variables"=>nil, "graphql"=>{"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom confusion\",\n  }) `\n  }\n", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:01:42 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom confusion\",\n  }) {\n    clientMutationId\n  } \n  }\n", "variables"=>nil, "graphql"=>{"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom confusion\",\n  }) {\n    clientMutationId\n  } \n  }\n", "variables"=>nil}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tom confusion"], ["created_at", "2019-03-01 22:01:42.707749"], ["updated_at", "2019-03-01 22:01:42.707749"]]
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:02:43 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom'confusion\",\n  }) {\n    user {\n      id\n      name\n\n    }\n    errors\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"mutation {\n  createUser(input: {\n    name: \"Tom'confusion\",\n  }) {\n    user {\n      id\n      name\n\n    }\n    errors\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tom'confusion"], ["created_at", "2019-03-01 22:02:43.294703"], ["updated_at", "2019-03-01 22:02:43.294703"]]
+  ↳ app/graphql/mutations/create_user.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/mutations/create_user.rb:15
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:03:16 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 4.1ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bob"], ["created_at", "2019-03-01 22:13:12.128702"], ["updated_at", "2019-03-01 22:13:12.128702"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alice"], ["created_at", "2019-03-01 22:13:12.132978"], ["updated_at", "2019-03-01 22:13:12.132978"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alex"], ["created_at", "2019-03-01 22:13:12.135681"], ["updated_at", "2019-03-01 22:13:12.135681"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:13:15 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+  [1m[35m (100.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (5054.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (98.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (200.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (114.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (105.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_test"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (527.1ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (258.2ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190301035938)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-01 22:15:28.816734"], ["updated_at", "2019-03-01 22:15:28.816734"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190301035938)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-01 22:15:28.883526"], ["updated_at", "2019-03-01 22:15:28.883526"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-01 22:15:28.888991"], ["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bob"], ["created_at", "2019-03-01 22:15:28.921311"], ["updated_at", "2019-03-01 22:15:28.921311"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alice"], ["created_at", "2019-03-01 22:15:28.924688"], ["updated_at", "2019-03-01 22:15:28.924688"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alex"], ["created_at", "2019-03-01 22:15:28.927757"], ["updated_at", "2019-03-01 22:15:28.927757"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (99.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (90.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bob"], ["created_at", "2019-03-01 22:15:39.539824"], ["updated_at", "2019-03-01 22:15:39.539824"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alice"], ["created_at", "2019-03-01 22:15:39.542675"], ["updated_at", "2019-03-01 22:15:39.542675"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alex"], ["created_at", "2019-03-01 22:15:39.545283"], ["updated_at", "2019-03-01 22:15:39.545283"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-01 22:17:18 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (194.4ms)
+Completed 200 OK in 251ms (Views: 235.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:17:19 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 121ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 22:17:21 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 7.0ms)
+
+

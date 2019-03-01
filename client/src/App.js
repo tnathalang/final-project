@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import axios from 'axios'
 
 class App extends Component {
 
@@ -22,9 +21,8 @@ class App extends Component {
       })
     })
       .then(r => r.json())
-      .then(data => {
-        console.log(data.data.users)
-        this.setState({ users: data.data.users })
+      .then(y => {
+        this.setState({ users: y.data.users })
       })
 
   }
