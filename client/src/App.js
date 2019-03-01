@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios'
+// import axios from 'axios'
 
 class App extends Component {
 
@@ -11,17 +11,23 @@ class App extends Component {
 
 
   componentDidMount() {
-    axios
-      .get("http://localhost:3001/api/v1/users")
-      .then(response => {
-        console.log(response);
-        this.setState({
-          users: response.data
-        });
+    fetch('/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        "query": "{users { id name }}", "variables": null
       })
-      .catch(error => console.log(error));
-  }
+    })
+      .then(r => r.json())
+      .then(data => {
+        console.log(data.data.users)
+        this.setState({ users: data.data.users })
+      })
 
+  }
 
   render() {
     return (
