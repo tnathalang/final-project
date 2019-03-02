@@ -5,7 +5,6 @@ import TestForm from './components/partials/TestForm.js'
 import TestMapUsers from './components/partials/TestMapUsers.js'
 
 
-<<<<<<< HEAD
 class App extends Component {
   render() {
     return (
