@@ -6,13 +6,14 @@ import TestMapUsers from './components/partials/TestMapUsers.js'
 
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-          <TestMapUsers />
+        <TestMapUsers />
 
         {/* Form for testing */}
-          < TestForm />
+        < TestForm />
 
       </div>
     );

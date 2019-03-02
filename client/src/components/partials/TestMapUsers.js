@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class TestMapUsers extends Component {
-  
+
   state = {
     users: []
   }
@@ -14,13 +14,13 @@ class TestMapUsers extends Component {
         'Accept': 'application/json',
       },
       body: JSON.stringify({
-        "query": "{users { id name }}", "variables": null
+        "query": "{users { id firstName lastName}}", "variables": null
       })
     })
-    .then(r => r.json())
-    .then(y => {
-      this.setState({ users: y.data.users })
-    })
+      .then(r => r.json())
+      .then(y => {
+        this.setState({ users: y.data.users })
+      })
     //can do a console log for visual 
     console.log(this.state);
   }
@@ -31,7 +31,7 @@ class TestMapUsers extends Component {
       <div className="App">
         <h1>Users</h1>
         {this.state.users.map(user =>
-          (<div key={user.id} value={user.name}>{user.name}</div>)
+          (<div key={user.id}>{user.firstName} {user.lastName}</div>)
         )}
       </div>
 
