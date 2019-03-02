@@ -15,7 +15,7 @@ module Types
     def user(id:)
       User.find(id)
     end
-
+ 
     def interests
       Interest.all
     end

@@ -9,13 +9,9 @@
 
 User.destroy_all
 Interest.destroy_all
+puts "Users were being burn alive"
 
-puts "users were being burn alive"
-puts "Resurrecting a better version of the users"
 
-20.times do
-    user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email
-end 
 
 puts "generating interests"
 
@@ -42,6 +38,17 @@ puts "generating interests"
     Interest.create(topic: "GitHub")
     Interest.create(topic: "Blogging")
     Interest.create(topic: "Outdoor")
+    
+    
+    puts "Resurrecting a better version of the users"
+
+    20.times do 
+        user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email
+       4.times do
+        user.interests << (Interest.all - user.interests).sample
+       end
+       user.save
+    end 
 
 puts "Seed process completed"
 
