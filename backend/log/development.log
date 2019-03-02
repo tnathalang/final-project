@@ -4029,3 +4029,1314 @@ Processing by GraphqlController#execute as JSON
 Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
 
 
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (200.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreateUsers (20190301035938)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (46.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190301035938_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190301035938"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (100.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (200.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (100.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (99.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreateUsers (20190301035938)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (111.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreateUsers (20190301035938)
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190301035938"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (200.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (97.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreateUsers (20190301035938)
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190301035938_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190301035938"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (102.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Rusty Keyes"], ["last_name", "Harris"], ["email", "conchitaking@schulist.info"], ["created_at", "2019-03-01 23:28:41.148737"], ["updated_at", "2019-03-01 23:28:41.148737"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Robin Meeblind"], ["last_name", "Koepp"], ["email", "vivacain@spinka.io"], ["created_at", "2019-03-01 23:28:41.153499"], ["updated_at", "2019-03-01 23:28:41.153499"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Biff Wellington"], ["last_name", "Kohler"], ["email", "bertha@fritschvon.info"], ["created_at", "2019-03-01 23:28:41.157506"], ["updated_at", "2019-03-01 23:28:41.157506"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Quimby Ingmeen"], ["last_name", "Donnelly"], ["email", "gonzalomayer@deckow.info"], ["created_at", "2019-03-01 23:28:41.161361"], ["updated_at", "2019-03-01 23:28:41.161361"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Rocky Rhoades"], ["last_name", "Shanahan"], ["email", "sirena@hoppe.net"], ["created_at", "2019-03-01 23:28:41.165241"], ["updated_at", "2019-03-01 23:28:41.165241"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Lance Lyde"], ["last_name", "Boyer"], ["email", "faustoklocko@langworthcormier.name"], ["created_at", "2019-03-01 23:28:41.168860"], ["updated_at", "2019-03-01 23:28:41.168860"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Hal Jalikakick"], ["last_name", "Orn"], ["email", "rhea@fritschkautzer.net"], ["created_at", "2019-03-01 23:28:41.172412"], ["updated_at", "2019-03-01 23:28:41.172412"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Lois Price"], ["last_name", "Wisoky"], ["email", "wenmcclure@dooley.name"], ["created_at", "2019-03-01 23:28:41.175894"], ["updated_at", "2019-03-01 23:28:41.175894"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Doll R. Bill"], ["last_name", "Homenick"], ["email", "kary@dickinson.net"], ["created_at", "2019-03-01 23:28:41.179070"], ["updated_at", "2019-03-01 23:28:41.179070"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Willie Maykit"], ["last_name", "Auer"], ["email", "mauroskiles@upton.io"], ["created_at", "2019-03-01 23:28:41.182353"], ["updated_at", "2019-03-01 23:28:41.182353"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Holly Wood"], ["last_name", "Weber"], ["email", "miles@marquardt.info"], ["created_at", "2019-03-01 23:28:41.186003"], ["updated_at", "2019-03-01 23:28:41.186003"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Heather N. Yonn"], ["last_name", "Schuppe"], ["email", "harmonyjast@lynchluettgen.org"], ["created_at", "2019-03-01 23:28:41.189392"], ["updated_at", "2019-03-01 23:28:41.189392"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Pearl E White"], ["last_name", "Cummings"], ["email", "cherekemmer@balistreri.biz"], ["created_at", "2019-03-01 23:28:41.192731"], ["updated_at", "2019-03-01 23:28:41.192731"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Rusty Irons"], ["last_name", "Spencer"], ["email", "tequila@mayer.co"], ["created_at", "2019-03-01 23:28:41.195940"], ["updated_at", "2019-03-01 23:28:41.195940"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Tom A. Toe"], ["last_name", "Jaskolski"], ["email", "tod@predovicschumm.net"], ["created_at", "2019-03-01 23:28:41.199319"], ["updated_at", "2019-03-01 23:28:41.199319"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Pearl E. Gates"], ["last_name", "Hamill"], ["email", "teena@price.name"], ["created_at", "2019-03-01 23:28:41.202622"], ["updated_at", "2019-03-01 23:28:41.202622"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Jim Nasium"], ["last_name", "Greenholt"], ["email", "adalbertooberbrunner@vonmarvin.org"], ["created_at", "2019-03-01 23:28:41.206602"], ["updated_at", "2019-03-01 23:28:41.206602"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Didi Reelydoit"], ["last_name", "Russel"], ["email", "alfonzorohan@johns.name"], ["created_at", "2019-03-01 23:28:41.210312"], ["updated_at", "2019-03-01 23:28:41.210312"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Jack Dupp"], ["last_name", "Kuhn"], ["email", "jeffreybarrows@macgyver.name"], ["created_at", "2019-03-01 23:28:41.213475"], ["updated_at", "2019-03-01 23:28:41.213475"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Harrison Fire"], ["last_name", "Gorczany"], ["email", "josephinaschuster@danielgleichner.net"], ["created_at", "2019-03-01 23:28:41.216962"], ["updated_at", "2019-03-01 23:28:41.216962"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:42:47 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id first_name last_name email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id first_name last_name email }}", "variables"=>nil}}
+Completed 200 OK in 57ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-01 23:43:32 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (233.5ms)
+Completed 200 OK in 294ms (Views: 275.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/graphiql/rails/application-6f03c7a92432765b0fbe671bfb7a292ee6c37e6704b6e6ac95587e45676bbf72.js" for 10.0.2.2 at 2019-03-01 23:43:32 +0000
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:43:33 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 112ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:43:35 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    name\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:43:48 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 77ms (Views: 0.6ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:44:00 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:44:06 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:46:40 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:47:08 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:47:52 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:47:53 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:48:16 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:48:16 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:48:25 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:48:25 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:49:02 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:49:02 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:51:22 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-01 23:51:45 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (18.6ms)
+Completed 200 OK in 92ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:51:45 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 101ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:51:47 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:55:26 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:57:51 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:57:52 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:58:44 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+        Failed to implement User.firstname, tried:
+
+        - `Types::UserType#firstname`, which did not exist
+        - `User#firstname`, which did not exist
+        - Looking up hash key `:firstname` or `"firstname"` on `#<User:0x00007f1228d09a80>`, but it wasn't a Hash
+
+        To implement this field, define one of the methods above (and check for typos)
+
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:539:in `resolve_field_method'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:611:in `block in public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:621:in `with_extensions'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:596:in `public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:457:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1132:in `after_lazy'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:441:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `resolve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:314:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:125:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:124:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:277:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:256:in `block in resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:150:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:53:in `block in resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:31:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `map'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:182:in `block in instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:376:in `block in multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1205:in `with_definition_error_check'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:375:in `multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:352:in `execute'
+/home/vagrant/.rvm/rubies/ruby-2.3.5/lib/ruby/2.3.0/forwardable.rb:204:in `execute'
+/vagrant/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 99ms (Views: 1.2ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:59:31 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+        Failed to implement User.firstname, tried:
+
+        - `Types::UserType#firstname`, which did not exist
+        - `User#firstname`, which did not exist
+        - Looking up hash key `:firstname` or `"firstname"` on `#<User:0x00007f120c02f8f8>`, but it wasn't a Hash
+
+        To implement this field, define one of the methods above (and check for typos)
+
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:539:in `resolve_field_method'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:611:in `block in public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:621:in `with_extensions'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:596:in `public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:457:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1132:in `after_lazy'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:441:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `resolve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:314:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:125:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:124:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:277:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:256:in `block in resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:150:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:53:in `block in resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:31:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `map'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:182:in `block in instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:376:in `block in multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1205:in `with_definition_error_check'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:375:in `multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:352:in `execute'
+/home/vagrant/.rvm/rubies/ruby-2.3.5/lib/ruby/2.3.0/forwardable.rb:204:in `execute'
+/vagrant/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 18ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-01 23:59:55 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 46ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-02 00:01:02 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (193.9ms)
+Completed 200 OK in 261ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:01:03 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 73ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:01:04 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 47ms (Views: 1.9ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:01:45 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:02:08 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:02:32 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:02:33 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:03:22 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 52ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:04:43 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+        Failed to implement User.firstname, tried:
+
+        - `Types::UserType#firstname`, which did not exist
+        - `User#firstname`, which did not exist
+        - Looking up hash key `:firstname` or `"firstname"` on `#<User:0x00007fe2c4d27bf8>`, but it wasn't a Hash
+
+        To implement this field, define one of the methods above (and check for typos)
+
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:539:in `resolve_field_method'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:611:in `block in public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:621:in `with_extensions'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:596:in `public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:457:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1132:in `after_lazy'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:441:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `resolve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:314:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:125:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:124:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:277:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:256:in `block in resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:150:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:53:in `block in resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:31:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `map'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:182:in `block in instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:376:in `block in multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1205:in `with_definition_error_check'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:375:in `multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:352:in `execute'
+/home/vagrant/.rvm/rubies/ruby-2.3.5/lib/ruby/2.3.0/forwardable.rb:204:in `execute'
+/vagrant/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 84ms (Views: 1.4ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:07:14 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 60ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:07:33 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:08:05 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:11:05 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+        Failed to implement User.firstname, tried:
+
+        - `Types::UserType#firstname`, which did not exist
+        - `User#firstname`, which did not exist
+        - Looking up hash key `:firstname` or `"firstname"` on `#<User:0x00007fcb0cd05a50>`, but it wasn't a Hash
+
+        To implement this field, define one of the methods above (and check for typos)
+
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:539:in `resolve_field_method'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:611:in `block in public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:621:in `with_extensions'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:596:in `public_send_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:457:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1132:in `after_lazy'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/field.rb:441:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/field.rb:248:in `resolve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:314:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:49:in `invoke_core'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema/middleware_chain.rb:38:in `invoke'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:125:in `block in resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:124:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:277:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:256:in `block in resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:249:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:271:in `resolve_value'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:206:in `continue_resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:177:in `continue_or_wait'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:150:in `resolve_field'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:88:in `block in resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:81:in `resolve_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:53:in `block in resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:49:in `resolve_root_selection'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/execute.rb:31:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:112:in `begin_query'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:84:in `block in run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `map'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:83:in `run_as_multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:62:in `block (2 levels) in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:182:in `block in instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:29:in `block (2 levels) in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:46:in `block (2 levels) in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:41:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:45:in `block in each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:44:in `each_query_call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:27:in `block in apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:72:in `call_hooks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/instrumentation.rb:26:in `apply_instrumenters'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:174:in `instrument_and_analyze'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:61:in `block in run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `block in trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:76:in `call_tracers'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/tracing.rb:62:in `trace'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:59:in `run_queries'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/execution/multiplex.rb:49:in `run_all'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:376:in `block in multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:1205:in `with_definition_error_check'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:375:in `multiplex'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphql-1.9.3/lib/graphql/schema.rb:352:in `execute'
+/home/vagrant/.rvm/rubies/ruby-2.3.5/lib/ruby/2.3.0/forwardable.rb:204:in `execute'
+/vagrant/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 76ms (Views: 1.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-02 00:13:34 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (194.8ms)
+Completed 200 OK in 261ms (Views: 243.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:13:35 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 68ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:13:36 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-02 00:13:48 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (12.7ms)
+Completed 200 OK in 77ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:13:48 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 68ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:13:50 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-02 00:14:03 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (184.6ms)
+Completed 200 OK in 244ms (Views: 230.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:14:04 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 81ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:14:05 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n    email\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 69ms (Views: 0.6ms | ActiveRecord: 12.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:17:10 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:17:47 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users {[ id firstname lastname email ]}}", "variables"=>nil, "graphql"=>{"query"=>"{users {[ id firstname lastname email ]}}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:17:48 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users {[ id firstname lastname email ]}}", "variables"=>nil, "graphql"=>{"query"=>"{users {[ id firstname lastname email ]}}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:18:09 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users [{ id firstname lastname email }]}", "variables"=>nil, "graphql"=>{"query"=>"{users [{ id firstname lastname email }]}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:18:10 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users [{ id firstname lastname email }]}", "variables"=>nil, "graphql"=>{"query"=>"{users [{ id firstname lastname email }]}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:23:10 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:23:12 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname lastname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname lastname email }}", "variables"=>nil}}
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:25:01 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id  email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id  email }}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 16ms (Views: 2.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:25:05 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id  email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id  email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:25:39 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id  email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id  email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:26:05 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstname email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstname email }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:26:24 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id first_name email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id first_name email }}", "variables"=>nil}}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:26:24 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id first_name email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id first_name email }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:26:29 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 21ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:26:30 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:27:14 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:27:40 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 45ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:27:50 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:29:18 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:29:27 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 12ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:29:30 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:29:44 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:30:20 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:30:34 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:30:45 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 18ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:30:56 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 13ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 00:31:10 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName email }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName email }}", "variables"=>nil}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 1.3ms)
+
+

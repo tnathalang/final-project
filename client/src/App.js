@@ -17,15 +17,14 @@ class App extends Component {
         'Accept': 'application/json',
       },
       body: JSON.stringify({
-        "query": "{users { id name }}", "variables": null
+        "query": "{users { id firstName lastName email }}", "variables": null
       })
     })
       .then(r => r.json())
-      .then(y => {
-        this.setState({ users: y.data.users })
+      .then(res => {
+        this.setState({ users: res.data.users })
       })
-//can do a console log for visual 
-console.log(this.state);
+
   }
 
   render() {
@@ -33,8 +32,9 @@ console.log(this.state);
       <div className="App">
         <h1>Users</h1>
         {this.state.users.map(user =>
-          <div key={user.id} value={user.name}>{user.name}</div>
-        )}
+          <div key={user.id} value={user.firstName}>{user.firstName} {user.lastName} {user.email}</div>
+        )
+        }
       </div>
     );
   }
