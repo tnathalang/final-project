@@ -1,40 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
+import './assets/styles/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import TestForm from './components/partials/TestForm.js'
+import TestMapUsers from './components/partials/TestMapUsers.js'
+
 
 class App extends Component {
-
-  state = {
-    users: []
-  }
-
-
-
-  componentDidMount() {
-    fetch('/graphql', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({
-        "query": "{users { id name }}", "variables": null
-      })
-    })
-      .then(r => r.json())
-      .then(y => {
-        this.setState({ users: y.data.users })
-      })
-//can do a console log for visual 
-console.log(this.state);
-  }
 
   render() {
     return (
       <div className="App">
-        <h1>Users</h1>
-        {this.state.users.map(user =>
-          <div key={user.id} value={user.name}>{user.name}</div>
-        )}
+          <TestMapUsers />
+
+        {/* Form for testing */}
+          < TestForm />
+
       </div>
     );
   }
