@@ -17094,3 +17094,143 @@ Completed 200 OK in 64ms (Views: 1.0ms | ActiveRecord: 14.5ms)
 >>>>>>> 81dfe96a11bc416ba2744d0d461b62be99756e0e
 
 
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:10:59 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 148ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:11:35 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-02 21:14:20 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (202.8ms)
+Completed 200 OK in 272ms (Views: 245.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:14:21 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 95ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:14:32 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users {\n    id\n    firstName\n\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"{\n  users {\n    id\n    firstName\n\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 161]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 162]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 163]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 164]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 165]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 166]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 167]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 168]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 169]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 170]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 171]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 172]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 173]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 174]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 175]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 176]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 177]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 178]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 179]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 180]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 219ms (Views: 1.1ms | ActiveRecord: 23.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:22:38 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:22:42 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:22:53 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:22:55 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id name }}", "variables"=>nil, "graphql"=>{"query"=>"{users { id name }}", "variables"=>nil}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:27:58 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName}}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName}}", "variables"=>nil}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:28:20 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName}}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName}}", "variables"=>nil}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:28:38 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName}}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName}}", "variables"=>nil}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:29:03 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName}}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName}}", "variables"=>nil}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-02 21:49:53 +0000
+Processing by GraphqlController#execute as JSON
+  Parameters: {"query"=>"{users { id firstName lastName}}", "variables"=>nil, "graphql"=>{"query"=>"{users { id firstName lastName}}", "variables"=>nil}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 6.7ms)
+
+
