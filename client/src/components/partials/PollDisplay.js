@@ -40,7 +40,9 @@ class PollDisplay extends React.Component {
         </div>
         <Collapse in={this.state.open}>
 {/* Form for testing*/}
-          <div  style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
+          <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
+{/* List of Current Polls*/}
+            <ListOfPolls />
 {/*Button to create a new poll */}
             <Row>
               <Col>
@@ -58,8 +60,6 @@ class PollDisplay extends React.Component {
               <div>
 
               </div>
-{/* List of Current Polls*/}
-            <ListOfPolls />
 
           </div>
         </Collapse>

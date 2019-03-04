@@ -15,24 +15,29 @@ import ProfileMatchCard from './components/partials/ProfileMatchCard.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
 
-
 class App extends Component {
 
   render() {
     return (
         <div>
+        <div>
           <Header />
+        </div>
         {/*  If not logged in */}
-          <SideBar />
-          <PollDisplay />
-
-          < ProfileMatch />
+        <div>
+            <SideBar />
+        </div>
 
         <div>
+        < ProfileMatch />
 
 
 
         </div>
+        <div>
+          <PollDisplay />
+          </div>
+
 
         {/*
           <Login />
@@ -41,7 +46,6 @@ class App extends Component {
           <NewPoll />
           < ProfileMatch />
           <ProfileMatchCard />
-
 
         <div className="App">
           // <SideBar /> //
