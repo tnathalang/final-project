@@ -1,5 +1,5 @@
 import React from 'react';
-import { UncontrolledCollapse, Button, Row, Col, CardBody, Container } from 'reactstrap';
+import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
 import { Card, Badge} from 'react-bootstrap';
 
 //Profile Match container is made with reactstrap
