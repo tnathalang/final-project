@@ -48,23 +48,6 @@ class App extends Component {
         </footer>
       </div>
 
-      , {/*
-          <Login />
-          <Register />
-          <SideBar />
-          <NewPoll />
-          < ProfileMatch />
-          <ProfileMatchCard />
-
-        <div className="App">
-          // <SideBar /> //
-          <Container>
-            <Row>
-              <Col ><NewPoll /></Col>
-            </Row>
-          </Container>
-        </div>
-        */}
     );
   }
 }
