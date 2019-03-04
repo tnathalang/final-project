@@ -604,3 +604,94 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 115ms (Views: 1.7ms | ActiveRecord: 13.4ms)
 
 
+  [1m[35m (185.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreatePolls (20190304202327)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (99.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (59.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreatePolls (20190304202327)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (185.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreatePolls (20190304202327)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (39.7ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190304202327_create_polls.rb:3
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL, "attending" character varying)[0m
+  ↳ db/migrate/20190304202327_create_polls.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190304202327"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."host_id" = $1 LIMIT $2[0m  [["host_id", 161], ["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+  [1m[36mPoll Create (0.5ms)[0m  [1m[32mINSERT INTO "polls" ("host_id", "description", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["host_id", 161], ["description", "i'm so hungry guys, lets eat"], ["title", "Lunch"], ["created_at", "2019-03-04 20:42:43.378952"], ["updated_at", "2019-03-04 20:42:43.378952"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."host_id" = $1 LIMIT $2[0m  [["host_id", 161], ["LIMIT", 11]]
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "polls_users" ON "users"."id" = "polls_users"."user_id" WHERE "polls_users"."poll_id" = $1 LIMIT $2[0m  [["poll_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 162], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT polls.*, users_polls.attending FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1[0m  [["user_id", 161]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT polls.*, polls_users.attending FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1[0m  [["user_id", 161]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" ORDER BY "polls"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser::HABTM_Polls Create (0.9ms)[0m  [1m[32mINSERT INTO "polls_users" ("user_id", "poll_id") VALUES ($1, $2)[0m  [["user_id", 161], ["poll_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 161], ["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 161], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 ORDER BY "polls"."id" ASC LIMIT $2[0m  [["user_id", 161], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 ORDER BY "polls"."id" ASC LIMIT $2[0m  [["user_id", 161], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 162], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" INNER JOIN "polls_users" ON "polls"."id" = "polls_users"."poll_id" WHERE "polls_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 161], ["LIMIT", 11]]
