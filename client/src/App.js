@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Users from './components/Users';
+import Header from './components/partials/Header.js'
+import SideBar from './components/partials/Sidebar.js'
+import NewPoll from './components/partials/NewPoll.js'
+import Register from './components/partials/Register.js'
+import ProfileMatchCard from './components/partials/ProfileMatchCard.js'
+import ProfileMatch from './components/partials/ProfileMatch.js'
+import PollDisplay from './components/partials/PollDisplay.js'
 
 class App extends Component {
   render() {
@@ -35,13 +44,11 @@ class App extends Component {
 
         </main>
 
-
-
-
         <footer>
         </footer>
+      </div>
 
-        {/*
+      , {/*
           <Login />
           <Register />
           <SideBar />
@@ -58,12 +65,8 @@ class App extends Component {
           </Container>
         </div>
         */}
-        {/* users from user partial */}
-        {/* <div>
-        <Users />
-      </div> */}
-        );
-      }
-    }
-    
-    export default App;
+    );
+  }
+}
+
+export default App;
