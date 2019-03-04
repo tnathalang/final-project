@@ -29,7 +29,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar  style={{ height:'80px'}}color="light" light expand="xl">
+        <Navbar fixed="top" style={{ zIndex: '11', height:'80px'}}color="light" light expand="xl">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
