@@ -42,7 +42,13 @@ puts "generating interests"
     
     puts "Resurrecting a better version of the users"
 
-    20.times do 
+    user = User.create first_name: "Mister", last_name: "Meowyagi", email: "mrmeowyagi@cats.com"
+    4.times do
+        user.interests << (Interest.all - user.interests).sample
+    end
+    user.save
+
+    19.times do 
         user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email
        4.times do
         user.interests << (Interest.all - user.interests).sample

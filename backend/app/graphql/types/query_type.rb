@@ -9,11 +9,11 @@ module Types
     end
 
     field :user, Types::UserType, null: false do
-      argument :id, ID, required: true
+      argument :firstName, String, required: true
     end
 
-    def user(id:)
-      User.find(id)
+    def user(args)
+      User.find_by(first_name: args[:first_name])
     end
  
     def interests

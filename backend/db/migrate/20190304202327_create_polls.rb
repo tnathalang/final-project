@@ -7,8 +7,6 @@ class CreatePolls < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    create_join_table :users, :polls do |t|
-      t.string :attending
-    end
+    create_join_table :users, :polls
   end
 end
