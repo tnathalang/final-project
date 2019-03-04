@@ -1,38 +1,23 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
-
-import './assets/styles/App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './components/partials/Login.js'
-import TestMapUsers from './components/partials/TestMapUsers.js'
-import Header from './components/partials/Header.js'
-import SideBar from './components/partials/Sidebar.js'
-import NewPoll from './components/partials/NewPoll.js'
-import Register from './components/partials/Register.js'
-import ProfileMatchCard from './components/partials/ProfileMatchCard.js'
-import ProfileMatch from './components/partials/ProfileMatch.js'
-import PollDisplay from './components/partials/PollDisplay.js'
+import Users from './components/Users';
 
 class App extends Component {
-
   render() {
     return (
-        <div>
-          <header style={{ marginTop: '80px' }}>
-            <Header />
-          </header>
+      <div>
+        <header style={{ marginTop: '80px' }}>
+          <Header />
+        </header>
         {/*  If not logged in */}
 
-          <div>
-            <SideBar />
-          </div>
+        <div>
+          <SideBar />
+        </div>
 
-          <main >
+        <main >
 
-            <div style={{ margin: '60px', border: '1px solid black', paddingLeft: '280px'}}>
-            <Container style={{ display: 'flex'}}>
+          <div style={{ margin: '60px', border: '1px solid black', paddingLeft: '280px' }}>
+            <Container style={{ display: 'flex' }}>
               <Row>
                 <Col sm={12}>
                   <ProfileMatch />
@@ -45,16 +30,16 @@ class App extends Component {
 
                 </Col>
               </Row>
-              </Container>
-            </div>
+            </Container>
+          </div>
 
-          </main>
-
-
+        </main>
 
 
-          <footer>
-          </footer>
+
+
+        <footer>
+        </footer>
 
         {/*
           <Login />
@@ -73,10 +58,12 @@ class App extends Component {
           </Container>
         </div>
         */}
-
-      </div>
-    );
-  }
-}
-
-export default App;
+        {/* users from user partial */}
+        {/* <div>
+        <Users />
+      </div> */}
+        );
+      }
+    }
+    
+    export default App;
