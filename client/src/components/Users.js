@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import Gravatar from 'react-gravatar';
+
 
 
 const USERS_QUERY = gql`
@@ -28,7 +28,7 @@ class Users extends Component {
                         <div>
                             {data.users.map((user) => {
                                 return <div key={user.id}>
-                                    <Gravatar email={user.email} size={100} />
+                                    <img src={`https://robohash.org/${user.email}.png?set=set4`} />
                                     <div>
                                         <div>{user.firstName}</div>
                                         <div>{user.lastName}</div>
