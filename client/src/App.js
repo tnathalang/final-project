@@ -9,11 +9,16 @@ import Register from './components/partials/Register.js'
 import ProfileMatchCard from './components/partials/ProfileMatchCard.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
+import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div >
+        {/* <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Guard} />
+        </Switch> */}
         <header style={{ marginTop: '80px' }}>
           <Header />
         </header>
