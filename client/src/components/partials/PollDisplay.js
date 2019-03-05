@@ -2,7 +2,18 @@ import React from "react";
 import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
 import ListOfPolls from './ListOfPolls.js'
 import CreatePoll from './CreatePoll.js'
+import gql from "graphql-tag";
+import { Query, Mutation } from "react-apollo";
 
+
+const POLLS_QUERY = gql`
+query {
+    polls{
+        host_id
+        title
+        description
+    }
+}`
 
 
 class PollDisplay extends React.Component {
@@ -12,6 +23,14 @@ class PollDisplay extends React.Component {
     this.state = {
       open: true,
     };
+  }
+
+  updatePolls = (cache, { data: { createPoll } }) => {
+    const { polls } = cache.readQuery({ query: POLLS_QUERY });
+    cache.writeQuery({
+      query: POLLS_QUERY,
+      data: { polls: polls.concat([createPoll.poll]) },
+    });
   }
 
   render() {
@@ -42,7 +61,15 @@ class PollDisplay extends React.Component {
 {/* Form for testing*/}
           <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
 {/* List of Current Polls*/}
-            <ListOfPolls />
+      <Query query={POLLS_QUERY}>
+       {({ loading, error, data }) => {
+         if (loading) return <div>Fetching..</div>
+         if (error) return <div>Error!</div>
+         return (
+            <ListOfPolls polls={data.polls}/>
+          )
+          }}
+        </Query>
 {/*Button to create a new poll */}
             <Row>
               <Col>
@@ -55,7 +82,7 @@ class PollDisplay extends React.Component {
               </Col>
             </Row>
 {/* Press the create Button */}
-            <CreatePoll />
+            <CreatePoll onCreatePoll= {this.updatePoll} />
 {/*If No Events */}
               <div>
 

@@ -4590,3 +4590,1834 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:17:52 +0000
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:17:52 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:17:52 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:17:52 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:19:44 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:19:44 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:19:44 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:19:44 +0000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:19:53 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:50:26 +0000
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:50:34 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 19:50:34 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:14:51 +0000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:14:55 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:15:20 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:15:23 +0000
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:18:51 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:18:58 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:18:59 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:50:47 +0000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:50:51 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:50:58 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 20:51:01 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:00:26 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:00:37 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:30:06 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:32:13 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:32:19 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rake:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Migrating to CreatePolls (20190304202327)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190304202327_create_polls.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20190304202327_create_polls.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190304202327"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:50:54 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:51:00 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"YOoOO", "description"=>"yoooo"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"YOoOO", "description"=>"yoooo"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 9ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:53:56 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:54:03 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"yyoo", "description"=>"yooo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"yyoo", "description"=>"yooo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:54:43 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 21:55:08 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:01:43 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:23:25 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:27:28 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"hh", "description"=>"jjj"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"hh", "description"=>"jjj"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:29:39 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:29:39 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:29:49 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"hey", "description"=>"hey"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"hey", "description"=>"hey"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 16ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:29:50 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:36:26 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:36:39 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"poop", "description"=>"poooops"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"poop", "description"=>"poooops"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:38:49 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 42ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:38:58 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"poop", "description"=>"poop"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"poop", "description"=>"poop"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:10 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:15 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: Integer!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 30ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:31 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:36 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: Number!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: Number!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 16ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:47 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:40:52 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"nooo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"nooo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 15ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:42:34 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:42:42 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:43:38 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 80ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:43:48 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 18ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:45:21 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:45:29 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"noo", "description"=>"noo"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 21ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:45:50 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 51ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:45:53 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: ID!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 29ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:46:12 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:46:16 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 43ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:47:10 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 48ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:47:15 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"n", "description"=>"n"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 19ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:48:35 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:48:54 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 40ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:48:58 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"title"=>"j", "description"=>"j"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"title"=>"j", "description"=>"j"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 48ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:49:48 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:50:00 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 58ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:50:02 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"g", "description"=>"g"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"g", "description"=>"g"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 26ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:51:19 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 70ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:51:22 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"hh", "description"=>"hh"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"hh", "description"=>"hh"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 27ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:51:29 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:51:36 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"ff", "description"=>"ff"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"ff", "description"=>"ff"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:52:23 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 64ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:52:31 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"j", "description"=>"g"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"j", "description"=>"g"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 22:57:47 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:11:31 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 51ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:11:37 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 48ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:14:49 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:15:10 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:15:14 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"gg", "description"=>"gg"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"gg", "description"=>"gg"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 45ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:32:20 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 60ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:32:26 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"ff", "description"=>"ff"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"ff", "description"=>"ff"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 23ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:32:56 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 57ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:02 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:07 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"d", "description"=>"d"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"d", "description"=>"d"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 51ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:09 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:11 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 55ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:48 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+uninitialized constant Types::PollType::Number
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `rescue in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/poll_type.rb:4:in `<class:PollType>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/poll_type.rb:2:in `<module:Types>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/poll_type.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/mutations/create_poll.rb:12:in `<class:CreatePoll>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/mutations/create_poll.rb:2:in `<module:Mutations>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/mutations/create_poll.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:4:in `<class:MutationType>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/backend_schema.rb:2:in `<class:BackendSchema>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/backend_schema.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 76ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:33:52 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"d", "description"=>"d"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"d", "description"=>"d"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Types::BaseObject, expected /vagrant/week8/finalRails/final-project/backend/app/graphql/types/base_object.rb to define it):
+  
+app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+app/graphql/types/mutation_type.rb:1:in `<main>'
+app/graphql/backend_schema.rb:2:in `<class:BackendSchema>'
+app/graphql/backend_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:11:in `execute'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:34:17 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 59ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:37:11 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 69ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:37:14 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"ddd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"ddd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 29ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:39:08 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+uninitialized constant Mutations::CreatePolls
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `rescue in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:4:in `<class:MutationType>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/types/mutation_type.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/backend_schema.rb:2:in `<class:BackendSchema>'
+/vagrant/week8/finalRails/final-project/backend/app/graphql/backend_schema.rb:1:in `<main>'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:48:in `block in require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:47:in `require_or_load'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+/vagrant/week8/finalRails/final-project/backend/app/controllers/graphql_controller.rb:11:in `execute'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:194:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/notifications.rb:168:in `instrument'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/abstract_controller/base.rb:134:in `process'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:191:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_controller/metal.rb:252:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:34:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `each'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/journey/router.rb:35:in `serve'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/routing/route_set.rb:840:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/conditional_get.rb:38:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/migration.rb:559:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `block in call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/rack/logger.rb:26:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/activesupport-5.2.2/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/actionpack-5.2.2/lib/action_dispatch/middleware/static.rb:127:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/railties-5.2.2/lib/rails/engine.rb:524:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/configuration.rb:225:in `call'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:658:in `handle_request'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:472:in `process_client'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/server.rb:332:in `block in run'
+/home/vagrant/.rvm/gems/ruby-2.3.5/gems/puma-3.12.0/lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Completed 500 Internal Server Error in 54ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:39:13 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Types::BaseObject, expected /vagrant/week8/finalRails/final-project/backend/app/graphql/types/base_object.rb to define it):
+  
+app/graphql/types/mutation_type.rb:2:in `<module:Types>'
+app/graphql/types/mutation_type.rb:1:in `<main>'
+app/graphql/backend_schema.rb:2:in `<class:BackendSchema>'
+app/graphql/backend_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:11:in `execute'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:39:27 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 419ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:40:42 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  polls {\n    host_id\n    title\n    description\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 50ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:40:45 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"dd", "description"=>"dd"}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-05 23:40:55 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"CreatePoll", "variables"=>{"host_id"=>1, "title"=>"", "description"=>""}, "query"=>"mutation CreatePoll($host_id: Int!, $title: String!, $description: String!) {\n  createPoll(input: {host_id: $host_id, title: $title, description: $description}) {\n    poll {\n      id\n      host_id\n      title\n      description\n      __typename\n    }\n    errors\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 31ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+

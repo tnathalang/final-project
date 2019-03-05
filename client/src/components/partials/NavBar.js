@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-class Header extends Component {
+class NavBar extends Component {
   constructor(props) {
     super(props);
 
@@ -65,4 +65,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default NavBar;

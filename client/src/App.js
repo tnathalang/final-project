@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/partials/Header.js'
+import NavBar from './components/partials/NavBar.js'
 import SideBar from './components/partials/Sidebar.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <header style={{ marginTop: '80px' }}>
-          <Header />
+          <NavBar />
         </header>
         {/*  If not logged in */}
 
