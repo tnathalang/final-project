@@ -39,11 +39,6 @@ const ListOfPolls = () => (
                         label={`Yes!`}
                       />
 
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
-                      />
                     </div>
                   ))}
                   </Form>
@@ -74,11 +69,6 @@ const ListOfPolls = () => (
                         label={`Yes!`}
                       />
 
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
-                      />
                     </div>
                   ))}
                   </Form>
@@ -108,12 +98,6 @@ const ListOfPolls = () => (
                         type={type}
                         id={`default-${type}`}
                         label={`Yes!`}
-                      />
-
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
                       />
                     </div>
                   ))}
