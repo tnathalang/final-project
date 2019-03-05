@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Collapse, Form, Col, Row, Button } from 'react-bootstrap';
+import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
 import ListOfPolls from './ListOfPolls.js'
 import CreatePoll from './CreatePoll.js'
 
