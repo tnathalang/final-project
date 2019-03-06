@@ -11217,3 +11217,475 @@ Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
   ↳ db/seeds.rb:56
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:56
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 16:43:48 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 16:44:12 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-06 16:50:29 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (454.8ms)
+Completed 200 OK in 570ms (Views: 551.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/graphiql/rails/application-8c170720948bf97b769a858441a0c5ef334be2b5edbfd069f6f0ed4bbc2206cc.css" for 10.0.2.2 at 2019-03-06 16:50:30 +0000
+Started GET "/assets/graphiql/rails/application-6f03c7a92432765b0fbe671bfb7a292ee6c37e6704b6e6ac95587e45676bbf72.js" for 10.0.2.2 at 2019-03-06 16:50:30 +0000
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 16:50:31 +0000
+  
+Started GET "/favicon.ico" for 10.0.2.2 at 2019-03-06 16:50:31 +0000
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 16:50:31 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 16:50:33 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 16:50:43 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-06 17:03:29 +0000
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (379.1ms)
+Completed 200 OK in 487ms (Views: 452.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:03:30 +0000
+Started GET "/favicon.ico" for 10.0.2.2 at 2019-03-06 17:03:30 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:03:30 +0000
+  
+ActionController::RoutingError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-06 17:05:35 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (614.0ms)
+Completed 200 OK in 750ms (Views: 714.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:05:36 +0000
+  
+ActionController::RoutingError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:7:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:05:36 +0000
+  
+ActionController::RoutingError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:7:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-06 17:06:16 +0000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (317.2ms)
+Completed 200 OK in 433ms (Views: 407.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:06:17 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 208ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:06:20 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (4.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (3.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (4.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (3.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 480ms (Views: 1.8ms | ActiveRecord: 59.8ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 17:06:33 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 207ms (Views: 4.4ms | ActiveRecord: 20.7ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 17:08:02 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 255ms (Views: 12.1ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/graphiql" for 10.0.2.2 at 2019-03-06 17:08:36 +0000
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.5/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (34.8ms)
+Completed 200 OK in 207ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:08:36 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 137ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:08:38 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (5.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 259ms (Views: 4.4ms | ActiveRecord: 25.5ms)
+
+
+Started POST "/graphql" for 10.0.2.2 at 2019-03-06 17:08:46 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"{\n  users{\n    id\n    firstName\n    lastName\n  interests {\n    topic\n  }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.9ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 276ms (Views: 3.6ms | ActiveRecord: 21.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 17:09:06 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  users {\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.1ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (2.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/graphql_controller.rb:11
+  [1m[36mInterest Load (0.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/graphql_controller.rb:11
+Completed 200 OK in 241ms (Views: 5.0ms | ActiveRecord: 16.9ms)
+
+
