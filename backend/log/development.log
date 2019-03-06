@@ -8593,3 +8593,2627 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 250ms (Views: 1.6ms | ActiveRecord: 25.6ms)
 
 
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2019-03-06 00:08:36 +0000
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 00:09:53 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 145ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 00:10:56 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 00:14:48 +0000
+Started POST "/graphql" for 127.0.0.1 at 2019-03-06 00:14:48 +0000
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  user {\n    id\n    firstName\n    lastName\n    email\n    interests {\n      topic\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (99.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (14.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5241.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (199.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (200.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (125.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (105.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (280.9ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (265.4ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 00:19:56.656226"], ["updated_at", "2019-03-06 00:19:56.656226"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 00:19:56.768958"], ["updated_at", "2019-03-06 00:19:56.768958"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-06 00:19:56.776449"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mInterest Create (1.5ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Food"], ["created_at", "2019-03-06 00:19:56.861678"], ["updated_at", "2019-03-06 00:19:56.861678"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mInterest Create (0.7ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Travel"], ["created_at", "2019-03-06 00:19:56.869637"], ["updated_at", "2019-03-06 00:19:56.869637"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Sports"], ["created_at", "2019-03-06 00:19:56.873869"], ["updated_at", "2019-03-06 00:19:56.873869"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mInterest Create (0.5ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cars"], ["created_at", "2019-03-06 00:19:56.878676"], ["updated_at", "2019-03-06 00:19:56.878676"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Healthy Living"], ["created_at", "2019-03-06 00:19:56.883187"], ["updated_at", "2019-03-06 00:19:56.883187"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mInterest Create (0.9ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Spicy Cuisine"], ["created_at", "2019-03-06 00:19:56.888124"], ["updated_at", "2019-03-06 00:19:56.888124"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Gadgets"], ["created_at", "2019-03-06 00:19:56.893497"], ["updated_at", "2019-03-06 00:19:56.893497"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Apple Products"], ["created_at", "2019-03-06 00:19:56.897205"], ["updated_at", "2019-03-06 00:19:56.897205"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Android Products"], ["created_at", "2019-03-06 00:19:56.901224"], ["updated_at", "2019-03-06 00:19:56.901224"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "SpaceX"], ["created_at", "2019-03-06 00:19:56.904968"], ["updated_at", "2019-03-06 00:19:56.904968"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mInterest Create (0.5ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Ruby on Rails"], ["created_at", "2019-03-06 00:19:56.908168"], ["updated_at", "2019-03-06 00:19:56.908168"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "React.JS"], ["created_at", "2019-03-06 00:19:56.912594"], ["updated_at", "2019-03-06 00:19:56.912594"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "JAVA"], ["created_at", "2019-03-06 00:19:56.915923"], ["updated_at", "2019-03-06 00:19:56.915923"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Video Games"], ["created_at", "2019-03-06 00:19:56.919999"], ["updated_at", "2019-03-06 00:19:56.919999"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Dogs"], ["created_at", "2019-03-06 00:19:56.923406"], ["updated_at", "2019-03-06 00:19:56.923406"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cats"], ["created_at", "2019-03-06 00:19:56.927599"], ["updated_at", "2019-03-06 00:19:56.927599"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Coffee"], ["created_at", "2019-03-06 00:19:56.930948"], ["updated_at", "2019-03-06 00:19:56.930948"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Tea"], ["created_at", "2019-03-06 00:19:56.934563"], ["updated_at", "2019-03-06 00:19:56.934563"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Winter Sports"], ["created_at", "2019-03-06 00:19:56.937978"], ["updated_at", "2019-03-06 00:19:56.937978"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Swimming"], ["created_at", "2019-03-06 00:19:56.941304"], ["updated_at", "2019-03-06 00:19:56.941304"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "GitHub"], ["created_at", "2019-03-06 00:19:56.944642"], ["updated_at", "2019-03-06 00:19:56.944642"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Blogging"], ["created_at", "2019-03-06 00:19:56.950240"], ["updated_at", "2019-03-06 00:19:56.950240"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Outdoor"], ["created_at", "2019-03-06 00:19:56.953668"], ["updated_at", "2019-03-06 00:19:56.953668"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mister"], ["last_name", "Meowyagi"], ["email", "mrmeowyagi@cats.com"], ["password", "meowster"], ["created_at", "2019-03-06 00:19:56.966844"], ["updated_at", "2019-03-06 00:19:56.966844"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 10]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 13]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 14]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 8]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Gaylord"], ["last_name", "Strosin"], ["email", "lynsey@stiedemann.info"], ["password", "Wn2bUi0u"], ["created_at", "2019-03-06 00:19:57.370952"], ["updated_at", "2019-03-06 00:19:57.370952"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rogelio"], ["last_name", "Braun"], ["email", "matildeharris@windler.io"], ["password", "KlHoXwU4"], ["created_at", "2019-03-06 00:19:57.401555"], ["updated_at", "2019-03-06 00:19:57.401555"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Tasia"], ["last_name", "Gutmann"], ["email", "pat@tromp.io"], ["password", "B0X60sOlIjG10zH6"], ["created_at", "2019-03-06 00:19:57.449175"], ["updated_at", "2019-03-06 00:19:57.449175"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.7ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (2.8ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (1.7ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (1.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.7ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 21]]
+  ↳ db/seeds.rb:54
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Wendell"], ["last_name", "Casper"], ["email", "jerilyn@bednarhuel.io"], ["password", "90JsCbP5"], ["created_at", "2019-03-06 00:19:57.520331"], ["updated_at", "2019-03-06 00:19:57.520331"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (1.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.5ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 23]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (1.0ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Claud"], ["last_name", "Reichel"], ["email", "al@kleinroberts.com"], ["password", "KzV5FoR4ShFwAt"], ["created_at", "2019-03-06 00:19:57.570069"], ["updated_at", "2019-03-06 00:19:57.570069"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Quyen"], ["last_name", "Toy"], ["email", "kurt@rolfson.name"], ["password", "5eOoF2I622CbN"], ["created_at", "2019-03-06 00:19:57.603922"], ["updated_at", "2019-03-06 00:19:57.603922"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Launa"], ["last_name", "Kling"], ["email", "eddy@champlinrippin.name"], ["password", "QzU8TpNxJzZ8Gm9"], ["created_at", "2019-03-06 00:19:57.630965"], ["updated_at", "2019-03-06 00:19:57.630965"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.6ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mandie"], ["last_name", "Hane"], ["email", "machellemante@kling.io"], ["password", "RdJcIa8cDc"], ["created_at", "2019-03-06 00:19:57.658256"], ["updated_at", "2019-03-06 00:19:57.658256"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bobby"], ["last_name", "Rempel"], ["email", "ernestolind@homenick.biz"], ["password", "Ae6bGbSa3p4vQw13"], ["created_at", "2019-03-06 00:19:57.684664"], ["updated_at", "2019-03-06 00:19:57.684664"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 5]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Loyd"], ["last_name", "Wiza"], ["email", "kennithbreitenberg@deckow.net"], ["password", "9xQqQcYaAm"], ["created_at", "2019-03-06 00:19:57.713246"], ["updated_at", "2019-03-06 00:19:57.713246"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 5]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Emmaline"], ["last_name", "Hyatt"], ["email", "delfinaprohaska@ruel.io"], ["password", "MlLsHsOfQa7yH"], ["created_at", "2019-03-06 00:19:57.742748"], ["updated_at", "2019-03-06 00:19:57.742748"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 21]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Johnnie"], ["last_name", "Huel"], ["email", "luannatreutel@hauck.net"], ["password", "KiR9G0WlRvCbPi4"], ["created_at", "2019-03-06 00:19:57.774208"], ["updated_at", "2019-03-06 00:19:57.774208"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Seema"], ["last_name", "Thiel"], ["email", "renaldocummerata@leffler.net"], ["password", "Ni0wBkX0Mw5d9iF"], ["created_at", "2019-03-06 00:19:57.806035"], ["updated_at", "2019-03-06 00:19:57.806035"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Joan"], ["last_name", "Beahan"], ["email", "charlott@bode.info"], ["password", "7d8qFo6wP5Y"], ["created_at", "2019-03-06 00:19:57.835235"], ["updated_at", "2019-03-06 00:19:57.835235"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Shawn"], ["last_name", "Thiel"], ["email", "genevielemke@wiegandmckenzie.biz"], ["password", "HkAg96Ti"], ["created_at", "2019-03-06 00:19:57.862081"], ["updated_at", "2019-03-06 00:19:57.862081"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Francisco"], ["last_name", "Barton"], ["email", "juliane@loweflatley.name"], ["password", "8w6zVu62Z"], ["created_at", "2019-03-06 00:19:57.889769"], ["updated_at", "2019-03-06 00:19:57.889769"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Cristobal"], ["last_name", "Fritsch"], ["email", "tiffaneybrown@haley.net"], ["password", "4tFzQ0Rt5"], ["created_at", "2019-03-06 00:19:57.915788"], ["updated_at", "2019-03-06 00:19:57.915788"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Davis"], ["last_name", "Berge"], ["email", "robindaugherty@kuvalisbailey.info"], ["password", "44Iq8rAo5o71Bg"], ["created_at", "2019-03-06 00:19:57.944606"], ["updated_at", "2019-03-06 00:19:57.944606"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bryant"], ["last_name", "Krajcik"], ["email", "cortez@reynoldsbauch.com"], ["password", "YrYk00M3"], ["created_at", "2019-03-06 00:19:57.975490"], ["updated_at", "2019-03-06 00:19:57.975490"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.2ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (98.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (200.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (118.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (112.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_test"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (490.4ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (267.5ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 03:18:34.651156"], ["updated_at", "2019-03-06 03:18:34.651156"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 03:18:34.754899"], ["updated_at", "2019-03-06 03:18:34.754899"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-06 03:18:34.761752"], ["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mInterest Create (0.6ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Food"], ["created_at", "2019-03-06 03:18:34.832728"], ["updated_at", "2019-03-06 03:18:34.832728"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mInterest Create (0.5ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Travel"], ["created_at", "2019-03-06 03:18:34.839384"], ["updated_at", "2019-03-06 03:18:34.839384"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Sports"], ["created_at", "2019-03-06 03:18:34.843084"], ["updated_at", "2019-03-06 03:18:34.843084"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cars"], ["created_at", "2019-03-06 03:18:34.847522"], ["updated_at", "2019-03-06 03:18:34.847522"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Healthy Living"], ["created_at", "2019-03-06 03:18:34.851011"], ["updated_at", "2019-03-06 03:18:34.851011"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Spicy Cuisine"], ["created_at", "2019-03-06 03:18:34.854537"], ["updated_at", "2019-03-06 03:18:34.854537"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Gadgets"], ["created_at", "2019-03-06 03:18:34.858195"], ["updated_at", "2019-03-06 03:18:34.858195"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Apple Products"], ["created_at", "2019-03-06 03:18:34.861612"], ["updated_at", "2019-03-06 03:18:34.861612"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Android Products"], ["created_at", "2019-03-06 03:18:34.864829"], ["updated_at", "2019-03-06 03:18:34.864829"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "SpaceX"], ["created_at", "2019-03-06 03:18:34.867896"], ["updated_at", "2019-03-06 03:18:34.867896"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Ruby on Rails"], ["created_at", "2019-03-06 03:18:34.870906"], ["updated_at", "2019-03-06 03:18:34.870906"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "React.JS"], ["created_at", "2019-03-06 03:18:34.873798"], ["updated_at", "2019-03-06 03:18:34.873798"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "JAVA"], ["created_at", "2019-03-06 03:18:34.876661"], ["updated_at", "2019-03-06 03:18:34.876661"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Video Games"], ["created_at", "2019-03-06 03:18:34.879305"], ["updated_at", "2019-03-06 03:18:34.879305"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Dogs"], ["created_at", "2019-03-06 03:18:34.881988"], ["updated_at", "2019-03-06 03:18:34.881988"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cats"], ["created_at", "2019-03-06 03:18:34.884587"], ["updated_at", "2019-03-06 03:18:34.884587"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Coffee"], ["created_at", "2019-03-06 03:18:34.888402"], ["updated_at", "2019-03-06 03:18:34.888402"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Tea"], ["created_at", "2019-03-06 03:18:34.892234"], ["updated_at", "2019-03-06 03:18:34.892234"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Winter Sports"], ["created_at", "2019-03-06 03:18:34.895250"], ["updated_at", "2019-03-06 03:18:34.895250"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Swimming"], ["created_at", "2019-03-06 03:18:34.898521"], ["updated_at", "2019-03-06 03:18:34.898521"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "GitHub"], ["created_at", "2019-03-06 03:18:34.901426"], ["updated_at", "2019-03-06 03:18:34.901426"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Blogging"], ["created_at", "2019-03-06 03:18:34.904295"], ["updated_at", "2019-03-06 03:18:34.904295"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Outdoor"], ["created_at", "2019-03-06 03:18:34.907038"], ["updated_at", "2019-03-06 03:18:34.907038"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (99.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (100.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (200.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (112.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_development"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (107.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "backend_test"[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (266.6ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (293.1ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 03:20:03.001812"], ["updated_at", "2019-03-06 03:20:03.001812"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "interests" ("id" bigserial primary key, "topic" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "interests_users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "interests_users" ("user_id" bigint NOT NULL, "interest_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "polls" ("id" bigserial primary key, "host_id" integer, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "polls_users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "polls_users" ("user_id" bigint NOT NULL, "poll_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190304202327)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190301035938),
+(20190302173218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-06 03:20:03.104610"], ["updated_at", "2019-03-06 03:20:03.104610"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-06 03:20:03.111794"], ["key", "environment"]]
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.3.5/bin/rake:23
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mInterest Create (0.7ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Food"], ["created_at", "2019-03-06 03:20:03.174294"], ["updated_at", "2019-03-06 03:20:03.174294"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Travel"], ["created_at", "2019-03-06 03:20:03.180234"], ["updated_at", "2019-03-06 03:20:03.180234"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mInterest Create (0.5ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Sports"], ["created_at", "2019-03-06 03:20:03.183560"], ["updated_at", "2019-03-06 03:20:03.183560"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cars"], ["created_at", "2019-03-06 03:20:03.190151"], ["updated_at", "2019-03-06 03:20:03.190151"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Healthy Living"], ["created_at", "2019-03-06 03:20:03.193717"], ["updated_at", "2019-03-06 03:20:03.193717"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Spicy Cuisine"], ["created_at", "2019-03-06 03:20:03.197069"], ["updated_at", "2019-03-06 03:20:03.197069"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Gadgets"], ["created_at", "2019-03-06 03:20:03.200511"], ["updated_at", "2019-03-06 03:20:03.200511"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mInterest Create (0.8ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Apple Products"], ["created_at", "2019-03-06 03:20:03.203979"], ["updated_at", "2019-03-06 03:20:03.203979"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Android Products"], ["created_at", "2019-03-06 03:20:03.207969"], ["updated_at", "2019-03-06 03:20:03.207969"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "SpaceX"], ["created_at", "2019-03-06 03:20:03.211305"], ["updated_at", "2019-03-06 03:20:03.211305"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Ruby on Rails"], ["created_at", "2019-03-06 03:20:03.214356"], ["updated_at", "2019-03-06 03:20:03.214356"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "React.JS"], ["created_at", "2019-03-06 03:20:03.217209"], ["updated_at", "2019-03-06 03:20:03.217209"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mInterest Create (0.2ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "JAVA"], ["created_at", "2019-03-06 03:20:03.219871"], ["updated_at", "2019-03-06 03:20:03.219871"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mInterest Create (0.4ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Video Games"], ["created_at", "2019-03-06 03:20:03.222628"], ["updated_at", "2019-03-06 03:20:03.222628"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Dogs"], ["created_at", "2019-03-06 03:20:03.226120"], ["updated_at", "2019-03-06 03:20:03.226120"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Cats"], ["created_at", "2019-03-06 03:20:03.229481"], ["updated_at", "2019-03-06 03:20:03.229481"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Coffee"], ["created_at", "2019-03-06 03:20:03.232749"], ["updated_at", "2019-03-06 03:20:03.232749"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Tea"], ["created_at", "2019-03-06 03:20:03.236126"], ["updated_at", "2019-03-06 03:20:03.236126"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Winter Sports"], ["created_at", "2019-03-06 03:20:03.239299"], ["updated_at", "2019-03-06 03:20:03.239299"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Swimming"], ["created_at", "2019-03-06 03:20:03.242322"], ["updated_at", "2019-03-06 03:20:03.242322"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "GitHub"], ["created_at", "2019-03-06 03:20:03.245233"], ["updated_at", "2019-03-06 03:20:03.245233"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Blogging"], ["created_at", "2019-03-06 03:20:03.247860"], ["updated_at", "2019-03-06 03:20:03.247860"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mInterest Create (0.3ms)[0m  [1m[32mINSERT INTO "interests" ("topic", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["topic", "Outdoor"], ["created_at", "2019-03-06 03:20:03.250895"], ["updated_at", "2019-03-06 03:20:03.250895"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mister"], ["last_name", "Meowyagi"], ["email", "mrmeowyagi@cats.com"], ["password_digest", "$2a$10$cgTihkkECNXzRhvccHCyoONS/VGmAOUy./mMhSiRr5Scu7rn8NN7i"], ["created_at", "2019-03-06 03:20:03.316299"], ["updated_at", "2019-03-06 03:20:03.316299"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 5]]
+  ↳ db/seeds.rb:47
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 23]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 22]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 1], ["interest_id", 7]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Edison"], ["last_name", "Thiel"], ["email", "carey@deckow.name"], ["password_digest", "$2a$10$aVOV.udP7hb9bA9rOGAWZeA/4wYFIHaQTfZqB63LAM1GZjSYj/Iju"], ["created_at", "2019-03-06 03:20:03.725810"], ["updated_at", "2019-03-06 03:20:03.725810"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 2], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Trudie"], ["last_name", "Lockman"], ["email", "tuanfunk@raubergstrom.name"], ["password_digest", "$2a$10$KMN531Lf9kSQHcJ7gg8Us.8SKmuEQn7iIXP2xqVHmTDJbKfPwYp/u"], ["created_at", "2019-03-06 03:20:03.809524"], ["updated_at", "2019-03-06 03:20:03.809524"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 3], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "An"], ["last_name", "Trantow"], ["email", "orval@zulaufupton.io"], ["password_digest", "$2a$10$045Xd/UIwuYePDURAeC4POdfLgdRIqU0Av7w2HcMTntf463k4CaSW"], ["created_at", "2019-03-06 03:20:03.891837"], ["updated_at", "2019-03-06 03:20:03.891837"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 4], ["interest_id", 5]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Sandra"], ["last_name", "Dach"], ["email", "elliotturner@cronaokeefe.com"], ["password_digest", "$2a$10$WIWn7PyBbdkmNQyaZ6TfNeG.nXW6dJd9T./qyp.Mguk0wZ4yx2PvG"], ["created_at", "2019-03-06 03:20:03.978941"], ["updated_at", "2019-03-06 03:20:03.978941"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.8ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 5], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Elwood"], ["last_name", "Luettgen"], ["email", "anthonyhahn@fritschfeeney.name"], ["password_digest", "$2a$10$RjMvklLRWNg.7g7I7JRda.hZXfhVSzOPuBD3k4bZzZ7WLcNBCYAWu"], ["created_at", "2019-03-06 03:20:04.071095"], ["updated_at", "2019-03-06 03:20:04.071095"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 3]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 6], ["interest_id", 23]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Cythia"], ["last_name", "Treutel"], ["email", "wiltonluettgen@murrayernser.info"], ["password_digest", "$2a$10$ejTHfjou8QTN3vyx2YWtPuRVf2cnedMZNNNnmQW6is5aHlmGn3Lqq"], ["created_at", "2019-03-06 03:20:04.159637"], ["updated_at", "2019-03-06 03:20:04.159637"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 7], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Audra"], ["last_name", "McDermott"], ["email", "cliffordstiedemann@doyleyost.io"], ["password_digest", "$2a$10$6hfzSrvsVRbRENzxr35/Y.mqoopp9O9OMLR1TgenEkVrhIgVVrHaa"], ["created_at", "2019-03-06 03:20:04.254593"], ["updated_at", "2019-03-06 03:20:04.254593"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 21]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 8], ["interest_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mickey"], ["last_name", "Schoen"], ["email", "lorrettaspinka@trantow.org"], ["password_digest", "$2a$10$I8NSn3AR5WJ4RS1pMyiMNOTyzTWphhXquULDEZNuMiEbHgIANGyDq"], ["created_at", "2019-03-06 03:20:04.335768"], ["updated_at", "2019-03-06 03:20:04.335768"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 9], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Maragret"], ["last_name", "Senger"], ["email", "colbygutkowski@baileyharber.org"], ["password_digest", "$2a$10$g4zy/ueGCU6Gu9/skGMmbeL/qmTxO8tqJ0OHUox/pr1ddpezoXBwa"], ["created_at", "2019-03-06 03:20:04.417156"], ["updated_at", "2019-03-06 03:20:04.417156"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 10], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Newton"], ["last_name", "Ferry"], ["email", "numbers@schowalterschoen.io"], ["password_digest", "$2a$10$iH0MxohkWb2TcNDGGvBNWORnalwk65Zv3s18e1bZvb4UOYcTzOqie"], ["created_at", "2019-03-06 03:20:04.497685"], ["updated_at", "2019-03-06 03:20:04.497685"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 11], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Jarred"], ["last_name", "Gutmann"], ["email", "marguerite@goyette.co"], ["password_digest", "$2a$10$vyd5eK1a7DFk7DaRSrEUGeQhIJRSuNTo4NNtG6PAjfKwxYsZNTNfW"], ["created_at", "2019-03-06 03:20:04.578326"], ["updated_at", "2019-03-06 03:20:04.578326"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 21]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 12], ["interest_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ronny"], ["last_name", "Daniel"], ["email", "rupertbuckridge@pacochabosco.co"], ["password_digest", "$2a$10$4qkCXSaQ3js4pBrQrtkHF.i1.oR6eaKI95NbdmHVejx.PSBQkw37G"], ["created_at", "2019-03-06 03:20:04.660102"], ["updated_at", "2019-03-06 03:20:04.660102"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.5ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 6]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 13], ["interest_id", 21]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Dollie"], ["last_name", "Lowe"], ["email", "dreama@granttromp.name"], ["password_digest", "$2a$10$wTflIrtJGLIfKs4SQMCMieO32a7JEXTf3b1yOgbvXzYRi4qNyIN.S"], ["created_at", "2019-03-06 03:20:04.741236"], ["updated_at", "2019-03-06 03:20:04.741236"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 14], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Marcene"], ["last_name", "Stanton"], ["email", "arnulfotorp@sanfordmills.co"], ["password_digest", "$2a$10$AEmzCbV5ihvYJKL3aeO8uejjCgB8gQUJYqTB5POIoEwVC0vAKnPuy"], ["created_at", "2019-03-06 03:20:04.821920"], ["updated_at", "2019-03-06 03:20:04.821920"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 12]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 23]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 15], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Miguel"], ["last_name", "Lowe"], ["email", "jude@gutmannmiller.com"], ["password_digest", "$2a$10$QjFfihDfIBcLFuJfGvfjReOYZd1Y1aBHn7k251EZN06SsODxxl4qu"], ["created_at", "2019-03-06 03:20:04.904274"], ["updated_at", "2019-03-06 03:20:04.904274"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 11]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 16], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Scottie"], ["last_name", "Stanton"], ["email", "dylanpowlowski@kemmer.name"], ["password_digest", "$2a$10$JnA4rfjramALHHgoEd7O3OEQp2ChyDYNK5.ZkrEIATHUvZZogqvj."], ["created_at", "2019-03-06 03:20:04.985379"], ["updated_at", "2019-03-06 03:20:04.985379"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.2ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 15]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 17], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Jonathan"], ["last_name", "Bogisich"], ["email", "deidra@christiansen.info"], ["password_digest", "$2a$10$G/aJaNdm6bLipN9jKV82p.6yVt/Gb2zUgg/bNjdOzo12xWw20IBAW"], ["created_at", "2019-03-06 03:20:05.067763"], ["updated_at", "2019-03-06 03:20:05.067763"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 8]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.4ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 23]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 18], ["interest_id", 4]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Katlyn"], ["last_name", "Bernhard"], ["email", "toddschuster@adams.co"], ["password_digest", "$2a$10$vIdC/7iWA9BnnTeUgRDbpO8T6PxdLM2nseC809NuiGHXvLy8BcDEu"], ["created_at", "2019-03-06 03:20:05.150959"], ["updated_at", "2019-03-06 03:20:05.150959"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 1]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 10]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.3ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.3ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 19], ["interest_id", 2]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Terrance"], ["last_name", "Cremin"], ["email", "milton@cain.co"], ["password_digest", "$2a$10$gSQOCy/gZqIDzLJ0Gycmvu/yQTYomuH.8nX6CNK4A8gILztoLkqIm"], ["created_at", "2019-03-06 03:20:05.232675"], ["updated_at", "2019-03-06 03:20:05.232675"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[36mInterest Load (0.5ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.4ms)[0m  [1m[34mSELECT "interests".* FROM "interests" INNER JOIN "interests_users" ON "interests"."id" = "interests_users"."interest_id" WHERE "interests_users"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.7ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 13]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.5ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 7]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.6ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.7ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 20]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mInterest Load (0.7ms)[0m  [1m[34mSELECT "interests".* FROM "interests"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser::HABTM_Interests Create (0.6ms)[0m  [1m[32mINSERT INTO "interests_users" ("user_id", "interest_id") VALUES ($1, $2)[0m  [["user_id", 20], ["interest_id", 22]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56

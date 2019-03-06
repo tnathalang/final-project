@@ -5,7 +5,7 @@ import Header from './components/partials/Header.js'
 import SideBar from './components/partials/Sidebar.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
