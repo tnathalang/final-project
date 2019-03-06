@@ -1,6 +1,6 @@
 import React from 'react';
-import { UncontrolledCollapse, Button, Row, Col, CardBody, Container } from 'reactstrap';
-import { Card, Badge, Form} from 'react-bootstrap';
+import { Row, Col, Container } from 'reactstrap';
+import { Card, Form} from 'react-bootstrap';
 
 //Profile Match container is made with reactstrap
 //The cards generated are hardCoded, these are made with reactBootstrap.
@@ -39,11 +39,6 @@ const ListOfPolls = () => (
                         label={`Yes!`}
                       />
 
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
-                      />
                     </div>
                   ))}
                   </Form>
@@ -74,11 +69,6 @@ const ListOfPolls = () => (
                         label={`Yes!`}
                       />
 
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
-                      />
                     </div>
                   ))}
                   </Form>
@@ -108,12 +98,6 @@ const ListOfPolls = () => (
                         type={type}
                         id={`default-${type}`}
                         label={`Yes!`}
-                      />
-
-                      <Form.Check
-                        type={type}
-                        id={`default-${type}`}
-                        label={`If I finish in time!`}
                       />
                     </div>
                   ))}
