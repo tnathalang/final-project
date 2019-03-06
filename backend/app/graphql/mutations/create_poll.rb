@@ -2,7 +2,7 @@ module Mutations
   class CreatePoll < GraphQL::Schema::RelayClassicMutation
    # TODO: define return fields
     # field :post, Types::PostType, null: false
-    argument :host_Id, Integer, required: true
+    argument :host_Id, ID, required: false
     argument :title, String, required: true
     argument :description, String, required: true
 

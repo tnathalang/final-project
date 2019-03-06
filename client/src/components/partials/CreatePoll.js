@@ -4,22 +4,30 @@ import gql from "graphql-tag";
 import { Query, Mutation } from "react-apollo";
 
 
+const POLLS_QUERY = gql`
+query {
+    polls{
+        host_id
+        title
+        description
+    }
+}`
 
 //adding db stuff for poll
 const CREATE_POLL = gql`
   mutation CreatePoll(
-      $host_id: Int!,
+      $hostId: ID!,
       $title: String!,
       $description: String!
   ) {
     createPoll(input: {
-      host_id: $host_id,
+      hostId: 32,
       title: $title,
       description: $description
     }) {
       poll {
         id
-        host_id
+        hostId
         title
         description
       }
@@ -33,19 +41,20 @@ const CREATE_POLL = gql`
 
 
 
+
 //creating and sending
 class CreatePoll extends React.Component {
 
 //setting state so fields so the react components are now controlled inuts
   state = {
-    host_id: 1,
+    host_id: 32,
     title: '',
     description: ''
   }
   onSubmit = (e, createPoll) => {
     e.preventDefault();
     createPoll({ variables: this.state });
-    this.setState({ host_id: 1, title: '', description: '' });
+    this.setState({ host_id: 32, title: '', description: '' });
   }
 
 
