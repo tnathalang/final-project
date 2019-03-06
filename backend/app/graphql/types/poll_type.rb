@@ -6,8 +6,4 @@ module Types
     field :description, String, null: true
   end
 
-  def interest_count
-    interests.size
-  end
-
 end
