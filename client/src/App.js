@@ -8,6 +8,12 @@ import PollDisplay from './components/partials/PollDisplay.js'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
+  state = { currentUser: {}, users: [{}] }
+
+  setCurrentuser = () => {
+
+  }
+
   render() {
     return (
       <div >
@@ -16,9 +22,9 @@ class App extends Component {
         </header>
         {/*  If not logged in */}
 
-        <div>
-          <SideBar />
-        </div>
+        <aside>
+          <SideBar setCurrentuser={this.setCurrentuser} />
+        </aside>
 
         <main >
 
