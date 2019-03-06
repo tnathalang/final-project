@@ -7,7 +7,7 @@ import '../../assets/styles/SideBar.css'
 
 
 const USERS_QUERY = gql`
-query {
+  query {
     users {
         firstName
         lastName
