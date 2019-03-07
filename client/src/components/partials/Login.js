@@ -10,71 +10,86 @@ class Login extends Component {
   }
 
 
-{/* LOGIN FORM!! CHANGE FOR AXIOS!! */}
+{/* LOGIN FORM!! CHANGE FOR AXIOS!! */ }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    const form = event.target;
-    const data = new FormData(event.target);
+handleSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  const data = new FormData(event.target);
 
-    fetch('/api/form-submit-url', {
-      method: 'POST',
-      body: data,
-    });
+  function login(loginParams) {
+    return fetch(`${baseUrl}/api/v1/auth`, {
+      method: 'POST'
+        credentials: 'include',
+      body: JSON.stringify(loginParams)
+    }).then(res => res.json())
+  }
+
+  function currentUser() {
+    return fetch(`${baseUrl}/api/v1/current_user`, {
+      credentials: 'include'
+    }).then(res => res.json())
+  }
+
+  function logout() {
+    return fetch(`${baseUrl}/api/v1/auth`, {
+      method: 'DELETE',
+      credentials: 'include'
+    }).then(res => res.json())
   }
 
 
-  render () {
+  render() {
 
     return (
-          /*Form for Login*/
-          <div className="login">
-          {/* Row for Login */}
-            <Container>
-              <Row>
-                <Col></Col>
-                <Col xl={6}>
-                  <h2>Login</h2>
-                  <br />
-                </Col>
-                <Col></Col>
-              </Row>
+      /*Form for Login*/
+      <div className="login">
+        {/* Row for Login */}
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col xl={6}>
+              <h2>Login</h2>
+              <br />
+            </Col>
+            <Col></Col>
+          </Row>
 
           {/*Row for Login Form*/}
-              <Row>
-                <Col></Col>
-                <Col xl={6}>
+          <Row>
+            <Col></Col>
+            <Col xl={6}>
 
 
-{/* Form for on submit*/}
-                  <Form onSubmit={this.handleSubmit}>
-                    <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-{/* Input ?? */}
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
+              {/* Form for on submit*/}
+              <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  {/* Input ?? */}
+                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
                       </Form.Text>
 
-                    </Form.Group>
+                </Form.Group>
 
-                    <Form.Group controlId="formBasicPassword">
-                      <Form.Label>Password</Form.Label>
-{/* Input?? */}
-                      <Form.Control type="password" placeholder="Password" />
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  {/* Input?? */}
+                  <Form.Control type="password" placeholder="Password" />
 
-                    </Form.Group>
+                </Form.Group>
 
-                    <Button variant="primary" type="submit">
-                      Submit
+                <Button variant="primary" type="submit">
+                  Submit
                     </Button>
-                  </Form>
-                </Col>
-                <Col></Col>
+              </Form>
+            </Col>
+            <Col></Col>
 
-              </Row>
-            </Container>
-          </div>
+          </Row>
+        </Container>
+      </div>
     )
   }
 }
