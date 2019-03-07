@@ -17,27 +17,6 @@ handleSubmit(event) {
   const form = event.target;
   const data = new FormData(event.target);
 
-  function login(loginParams) {
-    return fetch(`${baseUrl}/api/v1/auth`, {
-      method: 'POST'
-        credentials: 'include',
-      body: JSON.stringify(loginParams)
-    }).then(res => res.json())
-  }
-
-  function currentUser() {
-    return fetch(`${baseUrl}/api/v1/current_user`, {
-      credentials: 'include'
-    }).then(res => res.json())
-  }
-
-  function logout() {
-    return fetch(`${baseUrl}/api/v1/auth`, {
-      method: 'DELETE',
-      credentials: 'include'
-    }).then(res => res.json())
-  }
-
 
   render() {
 
