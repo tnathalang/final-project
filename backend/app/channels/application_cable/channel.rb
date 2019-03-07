@@ -1,5 +1,5 @@
 module ApplicationCable
-  # hello
+  # hello rest in peace
   class Channel < ActionCable::Channel::Base
   end
 end
