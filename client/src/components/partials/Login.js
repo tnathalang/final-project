@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 
-
 class Login extends Component {
+
+
+  constructor() {
+    super();
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+
+{/* LOGIN FORM!! CHANGE FOR AXIOS!! */}
+
+  handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(event.target);
+
+    fetch('/api/form-submit-url', {
+      method: 'POST',
+      body: data,
+    });
+  }
+
+
   render () {
 
     return (
@@ -23,18 +44,25 @@ class Login extends Component {
               <Row>
                 <Col></Col>
                 <Col xl={6}>
-                  <Form>
+
+
+{/* Form for on submit*/}
+                  <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
+{/* Input ?? */}
                       <Form.Control type="email" placeholder="Enter email" />
                       <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                       </Form.Text>
+
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
                       <Form.Label>Password</Form.Label>
+{/* Input?? */}
                       <Form.Control type="password" placeholder="Password" />
+
                     </Form.Group>
 
                     <Button variant="primary" type="submit">
