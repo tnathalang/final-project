@@ -22,54 +22,54 @@ class SideBar extends Component {
       .catch(error => console.log(error));
   }
 
+  //   render() {
+  //     return (
+  //       <div className="App">
+  //         <h1>Users</h1>
+  //         {this.state.users.map(user =>
+  //           <div key={user.id} value={user.first_name}>{user.first_name}</div>
+  //         )}
+  //       </div>
+  //     );
+  //   }
+  // }
+
+
   render() {
     return (
       <div className="App">
-        <h1>Users</h1>
         {this.state.users.map(user =>
-          <div key={user.id} value={user.email}>{user.email}</div>
-        )}
+          <div pageWrapId={"page-wrap"}>
+            <main id="page-wrap">
+              <Menu
+                isOpen={true}
+                noOverlay
+                customBurgerIcon={false}
+                customCrossIcon={false}
+              >
+                <div>
+                  <Image
+                    src={`https://robohash.org/${user.email}.png?set=set4`}
+                    roundedCircle
+                    fluid
+                  />
+                </div>
+                <div style={{ padding: '20px' }}>
+                  <h3 id="about" className="menu-item">{user.first_name} {user.last_name}</h3>
+                  <br />
+                  <h4 id="about" className="menu-item"> {user.email} </h4>
+                  <br />
+                  <h4 id="about" className="menu-item"> Interests </h4>
+                  <br />
+                </div>
+              </Menu>
+            </main>
+          </div>
+        )
+        }
       </div>
-    );
+    )
   }
 }
-
-
-//   render() {
-//     return (
-//       <div>
-//         return <div key={users.id}>
-//           <div pageWrapId={"page-wrap"}>
-//             <main id="page-wrap">
-//               <Menu
-//                 isOpen={true}
-//                 noOverlay
-//                 customBurgerIcon={false}
-//                 customCrossIcon={false}
-//               >
-//                 <div>
-//                   <Image
-//                     src={`https://robohash.org/${users.email}.png?set=set4`}
-//                     roundedCircle
-//                     fluid
-//                   />
-//                 </div>
-//                 <div style={{ padding: '20px' }}>
-//                   <h3 id="about" className="menu-item">{users.first_name} {users.last_name}</h3>
-//                   <br />
-//                   <h4 id="about" className="menu-item"> {users.email} </h4>
-//                   <br />
-//                   <h4 id="about" className="menu-item"> Interests </h4>
-//                   <br />
-//                 </div>
-//               </Menu>
-//             </main>
-//           </div>
-//         </div>
-
-//       </div>
-//     )
-//   }
-// }
 
 export default SideBar;
