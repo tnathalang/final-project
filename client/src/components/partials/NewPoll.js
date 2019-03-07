@@ -5,22 +5,37 @@ import { Form, Col, Row, Button, Container } from 'react-bootstrap';
 
 class NewPoll extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      joined: false
-    };
-    this.handleClick = this.handleClick.bind(this);
+      title: '',
+      description: '',
+    }
   }
 
-    handleClick() {
-    this.setState({
-      joined: !this.state.joined
-    });
-  }
+  //Handle Poll Change and Submit
+    handlePollChange = event => {
+      this.setState({
+        title: event.target.value,
+        description: event.target.value,
+      })
+    }
+
+    handlePollSubmit = event => {
+      if (event.key === 'Enter') {
+        this.props.updatePoll(this.state.title);
+        this.setState({ title: '' }); //clear the field
+        this.props.updatePoll(this.state.description);
+        this.setState({ description: '' });
+      }
+    };
+
+    // value={this.state.titlename}
+    // onChange= {this.handlePollChange}
+    // onKeyUp= {this.handlePollSubmit}??
+
 
   render () {
-
 
     return (
           // Form for testing
@@ -32,7 +47,9 @@ class NewPoll extends React.Component {
                   <Form>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                       <Form.Label>Create a New Poll</Form.Label>
-                      <Form.Control as="textarea" size="lg" type="text" placeholder="Large text" rows="3" />
+                      <Form.Control type="text" placeholder="Title" />
+                      <br/ >
+                      <Form.Control as="textarea" size="lg" type="text" placeholder="What would you like to do?" rows="3" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                       Submit

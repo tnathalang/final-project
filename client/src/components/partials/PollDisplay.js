@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
 import ListOfPolls from './ListOfPolls.js'
-import CreatePoll from './CreatePoll.js'
+import NewPoll from './NewPoll.js'
 
 
 
@@ -55,7 +55,7 @@ class PollDisplay extends React.Component {
               </Col>
             </Row>
 {/* Press the create Button */}
-            <CreatePoll />
+            <NewPoll />
 {/*If No Events */}
               <div>
 
