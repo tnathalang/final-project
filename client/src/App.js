@@ -5,7 +5,8 @@ import Header from './components/partials/Header.js'
 import SideBar from './components/partials/Sidebar.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import Login from "./components/partials/Login"
 
 class App extends Component {
   state = { currentUser: {}, users: [{}] }
@@ -16,41 +17,45 @@ class App extends Component {
 
   render() {
     return (
-      <div >
-        <header style={{ marginTop: '80px' }}>
-          <Header />
-        </header>
-        {/*  If not logged in */}
+      <Router>
+        <div >
+          <header style={{ marginTop: '80px' }}>
+            <Header />
+          </header>
 
-        <aside>
-          <SideBar setCurrentuser={this.setCurrentuser} />
-        </aside>
+          {/*  If not logged in */}
 
-        <main >
+          <Route path="/login" component={Login} />
 
-          <div style={{ margin: '60px', paddingLeft: '280px' }}>
-            <Container style={{ display: 'flex' }}>
-              <Row>
-                <Col sm={12}>
-                  <ProfileMatch />
-                </Col>
+          <aside>
+            <SideBar setCurrentuser={this.setCurrentuser} />
+          </aside>
 
-                <Col sm={12}>
-                  <PollDisplay />
-                </Col>
-                <Col sm>
+          <main >
 
-                </Col>
-              </Row>
-            </Container>
-          </div>
+            <div style={{ margin: '60px', paddingLeft: '280px' }}>
+              <Container style={{ display: 'flex' }}>
+                <Row>
+                  <Col sm={12}>
+                    <ProfileMatch />
+                  </Col>
 
-        </main>
+                  <Col sm={12}>
+                    <PollDisplay />
+                  </Col>
+                  <Col sm>
 
-        <footer>
-        </footer>
-      </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
 
+          </main>
+
+          <footer>
+          </footer>
+        </div>
+      </Router>
     );
   }
 }

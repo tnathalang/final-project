@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
+import AuthService from './AuthService'
+
 
 class Login extends Component {
 
-
-  constructor() {
-    super();
-    this.handleSubmit = this.handleSubmit.bind(this);
+  constructor(props) {
+    super(props)
+    this.Auth = new AuthService()
   }
 
 
-{/* LOGIN FORM!! CHANGE FOR AXIOS!! */ }
+  handleSubmit = (event) => {
 
-handleSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-  const data = new FormData(event.target);
+    event.preventDefault();
+    const form = event.target;
+    const params = {
+      email: form.email.value,
+      password: form.password.value
+    }
+
+    this.Auth.login(...params)
+      .then(() => { this.props.history.replace('/'); })
+      .catch(err => { alert(err); })
+  }
+
+  componentWillMount() {
+    if (this.Auth.loggedIn())
+      this.props.history.replace('/');
+  }
+
 
 
   render() {
@@ -43,19 +57,18 @@ handleSubmit(event) {
               {/* Form for on submit*/}
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
+                  <Form.Label>Email</Form.Label>
                   {/* Input ?? */}
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" placeholder="Enter email" name="email" />
                   <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                      </Form.Text>
+                  </Form.Text>
 
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                   <Form.Label>Password</Form.Label>
                   {/* Input?? */}
-                  <Form.Control type="password" placeholder="Password" />
+                  <Form.Control type="password" placeholder="Password" name="password" />
 
                 </Form.Group>
 
