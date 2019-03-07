@@ -3,6 +3,7 @@ import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
 import ListOfPolls from './ListOfPolls.js'
 import NewPoll from './NewPoll.js'
 
+//THE POLL DISPLAY PAGE OF ALL THE COMPONENTS
 
 
 class PollDisplay extends React.Component {

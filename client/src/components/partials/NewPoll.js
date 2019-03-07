@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Col, Row, Button, Container } from 'react-bootstrap';
 
 
+//CREATE A NEW POLL
 
 class NewPoll extends React.Component {
 
@@ -14,20 +15,30 @@ class NewPoll extends React.Component {
   }
 
   //Handle Poll Change and Submit
-    handlePollChange = event => {
+    handleOnChange = event => {
       this.setState({
-        title: event.target.value,
-        description: event.target.value,
+        [event.target.name]: event.target.value //[target.name] is es6 , name is applied to the input. mostly square brakets
       })
     }
 
-    handlePollSubmit = event => {
-      if (event.key === 'Enter') {
-        this.props.updatePoll(this.state.title);
-        this.setState({ title: '' }); //clear the field
-        this.props.updatePoll(this.state.description);
-        this.setState({ description: '' });
+    onSubmit = event => {
+      event.preventDefault();
+      let params = {
+        host_id: 1,
+        ...this.state
       }
+      //fetch for the polls
+      fetch('/api/v1/polls', {
+        method: 'POST',
+        body: JSON.stringify(params),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(res => res.json()) //cause a prommise
+      .then(response => console.log('Success:', JSON.stringify(response)))
+      .catch(error => console.error('Error:', error));
+
+      this.setState({ title: '', description: '' }); //clear the field
     };
 
     // value={this.state.titlename}
@@ -44,12 +55,26 @@ class NewPoll extends React.Component {
               <Row>
                 <Col></Col>
                 <Col xl={6}>
-                  <Form>
+                  <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                       <Form.Label>Create a New Poll</Form.Label>
-                      <Form.Control type="text" placeholder="Title" />
+                      <Form.Control
+                        name= "title"
+                        type="text"
+                        placeholder="Title"
+                        value={this.state.title}
+                        onChange={this.handleOnChange}
+                      />
                       <br/ >
-                      <Form.Control as="textarea" size="lg" type="text" placeholder="What would you like to do?" rows="3" />
+                      <Form.Control
+                        as="textarea"
+                        size="lg"
+                        name = "description"
+                        type="text"
+                        placeholder="What would you like to do?"
+                        value = {this.state.description}
+                        onChange={this.handleOnChange}
+                        rows="3" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                       Submit

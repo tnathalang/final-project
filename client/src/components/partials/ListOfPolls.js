@@ -2,6 +2,9 @@ import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { Card, Form} from 'react-bootstrap';
 
+//THE ACTUAL LIST OF ALL THE POLLS RENDERED
+
+
 //Profile Match container is made with reactstrap
 //The cards generated are hardCoded, these are made with reactBootstrap.
 //When we render we will delete tese hard coded nd import the fie from Profile Match card
@@ -39,7 +42,8 @@ class ListOfPolls extends React.Component {
   }
 
 //CLICK EVENT FOR THE LIKE BUTTON
-    handleClick() {
+    handleClick(event) {
+    event.preventDefault();
     this.setState({
       joined: !this.state.joined
     });
