@@ -10,7 +10,9 @@ class Login extends Component {
   }
 
 
-{/* LOGIN FORM!! CHANGE FOR AXIOS!! */}
+
+//* LOGIN FORM!! CHANGE FOR AXIOS!! */
+
 
   handleSubmit(event) {
     event.preventDefault();
@@ -53,7 +55,6 @@ class Login extends Component {
 {/* Input ?? */}
                       <Form.Control type="email" placeholder="Enter email" />
                       <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
                       </Form.Text>
 
                     </Form.Group>
