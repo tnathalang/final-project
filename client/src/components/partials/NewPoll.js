@@ -4,7 +4,23 @@ import { Form, Col, Row, Button, Container } from 'react-bootstrap';
 
 
 class NewPoll extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      joined: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+    handleClick() {
+    this.setState({
+      joined: !this.state.joined
+    });
+  }
+
   render () {
+
 
     return (
           // Form for testing
