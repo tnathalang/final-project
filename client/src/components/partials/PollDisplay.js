@@ -17,6 +17,7 @@ class PollDisplay extends React.Component {
 
     this.submitNewPolls = this.submitNewPolls.bind(this); //binding the this.
   }
+
     componentDidMount(){
       this.fetchAllPolls();
     }
@@ -29,24 +30,26 @@ class PollDisplay extends React.Component {
         'Content-Type': 'application/json'
       }
     }).then(res => {
-      this.setState((state) =>{
-        return this.state.polls.push(res);
-      })
-    } ) //cause a prommise,
+      this.setState((state) => ({polls: [ params, ...this.state.polls] }) )
+      // return this.state.polls.push(res);
+    }) //cause a prommise,
      //.then(response => console.log('Success:', JSON.stringify(response)))
     .catch(error => console.error('Error:', error));
   }
 
   fetchAllPolls() {
-    fetch('/api/v1/polls', {
+    fetch('http://localhost:3001/api/v1/polls', {
       method: 'GET',
-    }).then(res => {//create an index in controller and do same thing
-      this.setState((state) => {
-        return this.state.polls.push(res);
-        //WHAT DO I SET / DO!!!
-      })
     })
+      .then(res => res.json())
+      .then(res => {//create an index in controller and do same thing
+      this.setState((state) => ({polls: res} ) )
+        //WHAT DO I SET / DO!!!
+        console.log('Res:', res)
+      })
   }
+
+
 
   render() {
     const { open } = this.state;
@@ -76,7 +79,9 @@ class PollDisplay extends React.Component {
 {/* Form for testing*/}
           <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
 {/* List of Current Polls*/}
-            <ListOfPolls polls = {this.state.polls} />
+            <ListOfPolls
+              polls = {this.state.polls}
+            />
 {/*Button to create a new poll */}
             <Row>
               <Col>

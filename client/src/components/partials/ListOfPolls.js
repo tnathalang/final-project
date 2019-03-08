@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { Card, Form} from 'react-bootstrap';
+import { Button, Card, Form} from 'react-bootstrap';
 import NewPoll from "./NewPoll.js"
 
 //THE ACTUAL LIST OF ALL THE POLLS RENDERED
@@ -37,7 +37,7 @@ class ListOfPolls extends React.Component {
 //STATE FOR THE LIKE BUTTON
     this.state = {
       joined: false,
-      polls: this.props.polls,
+      //polls: this.props.polls,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -62,28 +62,38 @@ class ListOfPolls extends React.Component {
             <Col xl={12}>
 
                 <Row style={{ padding: '10px' }}>
+
+
+                {this.props.polls.map((data) =>
                   <Col style={{ padding: '10px' }}>
+                    <Card
+                    border="dark"
+                    bg="info"
+                    text="white"
+                    style={{ width: '18rem' }}>
+                      <Card.Header>{data.userName} Says:</Card.Header>
+                      <Card.Body>
+                        <Card.Title>{data.title}</Card.Title>
+                        <Card.Text>
+                        {data.description}
+                        </Card.Text>
+                      </Card.Body>
+                      <Card.Footer>
+                      <Form>
 
-                {this.state.polls.map((data) =>
-                  <Card border="success"style={{ width: '18rem' }}>
-                    <Card.Header>{data.userName} Says:</Card.Header>
-                    <Card.Body>
-                      <Card.Title>{data.title}</Card.Title>
-                      <Card.Text>
-                      {data.description}
-                      </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <Form>
-
-                    <button className="btn btn-primary" onClick={this.handleClick}>
-                      {flip}
-                    </button>
-                      </Form>
-                    </Card.Footer>
-                  </Card>
-  )}
+                      <Button
+                        type="checkbox"
+                        variant="outline-light"
+                        onClick={this.handleClick}
+                      >
+                        {flip}
+                      </Button>
+                        </Form>
+                      </Card.Footer>
+                    </Card>
                   </Col>
+  )}
+
                 </Row>
 
             </Col>

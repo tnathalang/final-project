@@ -11,6 +11,11 @@ class Api::V1::PollsController < ApplicationController
 
     end
 
+    def index
+      polls = Poll.order(created_at: :desc)
+      render json: polls
+    end
+
     private
     def poll_params
       params.require(:poll).permit(
