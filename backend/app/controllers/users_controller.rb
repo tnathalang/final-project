@@ -2,8 +2,13 @@ class UsersController < ApiController
     before_action :require_login, except: [:create]
 
     def create
-        user = User.create!(user_params)
-        render json: {token:user.auth_token}
+        puts "xxxxxxxxxxxxx"
+        puts params
+        user = User.new(first_name: params[:first_name],email: params[:email], last_name: params[:last_name], password: params[:password])
+        puts "----------"
+        puts user.inspect
+        user.save
+        # render json: {token:user.auth_token}
       # TODO: error handling
       rescue Exception
         puts "Houston, we got a problem"
@@ -25,14 +30,15 @@ class UsersController < ApiController
     end
     
     
-    private
-    def user_params
-      params.require(:user).permit(
-          :first_name,
-          :last_name, 
-          :email, 
-          :password
-          )
-    end
+    # private
+    
+    # def user_params
+    #   params.require(:user).permit(
+    #       :first_name,
+    #       :last_name, 
+    #       :email, 
+    #       :password
+    #       )
+    # end
     
   end
