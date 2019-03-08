@@ -31,7 +31,6 @@ class Login extends Component {
     return (
       /*Form for Login*/
       <div className="login">
-        {/* Row for Login */}
         <Container>
           <Row>
             <Col></Col>
@@ -41,14 +40,10 @@ class Login extends Component {
             </Col>
             <Col></Col>
           </Row>
-
-          {/*Row for Login Form*/}
           <Row>
             <Col></Col>
             <Col xl={6}>
 
-
-              {/* Form for on submit*/}
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="formBasicEmail">
                   <Form.Label>Email</Form.Label>

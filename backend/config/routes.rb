@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :polls
     end
+  end
 
 
   post '/login', to: "sessions#create"
