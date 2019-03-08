@@ -12,7 +12,7 @@ class SideBar extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:3001/api/v1/users")
+      .get("http://localhost:3001/api/v1/users/1")
       .then(response => {
         console.log(response);
         this.setState({
@@ -38,7 +38,7 @@ class SideBar extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.users.map(user =>
+        {[this.state.users].map(user =>
           <div pageWrapId={"page-wrap"}>
             <main id="page-wrap">
               <Menu
@@ -60,6 +60,7 @@ class SideBar extends Component {
                   <h4 id="about" className="menu-item"> {user.email} </h4>
                   <br />
                   <h4 id="about" className="menu-item"> Interests </h4>
+                  {[user.interests].map(interest => { return (<div>{interest}</div>) })}
                   <br />
                 </div>
               </Menu>

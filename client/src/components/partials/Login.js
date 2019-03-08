@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
-import AuthService from './AuthService'
 
 
 class Login extends Component {
-
-  constructor(props) {
-    super(props)
-    this.Auth = new AuthService()
-  }
-
-
   handleSubmit = (event) => {
-
     event.preventDefault();
     const form = event.target;
     const params = {
@@ -20,20 +11,16 @@ class Login extends Component {
       password: form.password.value
     }
 
-    this.Auth.login(...params)
-      .then(() => { this.props.history.replace('/'); })
-      .catch(err => { alert(err); })
+    fetch("/api/v1/authentication", {
+      method: "POST",
+      body: JSON.stringify(params),
+    }).then(res => {
+      localStorage.setItem('id_token', res.token)
+      return Promise.resolve(res);
+    })
   }
-
-  componentWillMount() {
-    if (this.Auth.loggedIn())
-      this.props.history.replace('/');
-  }
-
-
 
   render() {
-
     return (
       /*Form for Login*/
       <div className="login">

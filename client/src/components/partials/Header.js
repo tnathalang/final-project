@@ -29,7 +29,7 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
+      <header style={{ marginTop: '80px' }}>
         {/* <a href="/?bob">Bob</a>
         <a href="/?bob1">Bob1</a>
         <a href="/?bob2">Bob2</a>
@@ -66,7 +66,7 @@ class Header extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </header>
     );
   }
 }

@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/partials/Header.js'
-import SideBar from './components/partials/Sidebar.js'
 import ProfileMatch from './components/partials/ProfileMatch.js'
 import PollDisplay from './components/partials/PollDisplay.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Login from "./components/partials/Login"
+import Sidebar from "./components/partials/Sidebar"
+import AuthService from './components/partials/AuthService';
+import withAuth from './components/withAuth';
+const Auth = new AuthService();
 
 class App extends Component {
   state = { currentUser: {}, users: [{}] }
@@ -19,17 +22,11 @@ class App extends Component {
     return (
       <Router>
         <div >
-          <header style={{ marginTop: '80px' }}>
-            <Header />
-          </header>
-
-          {/*  If not logged in */}
+          <Header />
 
           <Route path="/login" component={Login} />
+          <Route path="/home" component={Sidebar} />
 
-          <aside>
-            <SideBar setCurrentuser={this.setCurrentuser} />
-          </aside>
 
           <main >
 
@@ -60,4 +57,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
