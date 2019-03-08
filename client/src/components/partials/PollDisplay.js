@@ -89,7 +89,7 @@ class PollDisplay extends React.Component {
                 style={{ margin: '10px', marginBottom: '1rem' }}
                 variant="outline-success"
               >
-                Create +
+                Create A New Poll+
               </Button>
               </Col>
             </Row>
