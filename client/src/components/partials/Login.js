@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
+import Auth from '../../modules/Auth';
+import { Link, withRouter } from 'react-router-dom'
+
 
 
 class Login extends Component {
@@ -11,12 +14,17 @@ class Login extends Component {
       password: form.password.value
     }
 
-    fetch("/api/v1/authentication", {
+    fetch("/login", {
       method: "POST",
       body: JSON.stringify(params),
-    }).then(res => {
-      localStorage.setItem('id_token', res.token)
-      return Promise.resolve(res);
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => res.json()).then(res => {
+      Auth.authenticateToken(res.user.token)
+      this.props.onSuccessLogin(res)
+      this.props.history.push('/home')
+
     })
   }
 
@@ -73,4 +81,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);

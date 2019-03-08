@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/partials/Header.js'
-import ProfileMatch from './components/partials/ProfileMatch.js'
-import PollDisplay from './components/partials/PollDisplay.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Login from "./components/partials/Login"
-import Sidebar from "./components/partials/Sidebar"
 import Auth from './modules/Auth'
+import PrivateRoute from './modules/PrivateRoute'
+import Home from './components/Home'
+
 
 
 class App extends Component {
@@ -18,40 +17,23 @@ class App extends Component {
     }
   }
 
+  onSuccessLogin = (currentUser) => {
+    this.setState({
+      user: currentUser.user,
+      interests: currentUser.interests
+    }, console.log(this.state))
+  }
+
+  onComponentDidMount
+
 
   render() {
     return (
       <Router>
         <div >
           <Header />
-
-          <Route path="/login" component={Login} />
-          <Route path="/home" component={Sidebar} />
-
-
-          <main >
-
-            <div style={{ margin: '60px', paddingLeft: '280px' }}>
-              <Container style={{ display: 'flex' }}>
-                <Row>
-                  <Col sm={12}>
-                    <ProfileMatch />
-                  </Col>
-
-                  <Col sm={12}>
-                    <PollDisplay />
-                  </Col>
-                  <Col sm>
-
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-
-          </main>
-
-          <footer>
-          </footer>
+          <Route path="/login" component={() => <Login onSuccessLogin={this.onSuccessLogin} />} />
+          <PrivateRoute path="/home" component={() => <Home user={this.state.user} interests={this.state.interests} />} />
         </div>
       </Router>
     );

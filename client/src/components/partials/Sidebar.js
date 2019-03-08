@@ -36,38 +36,37 @@ class SideBar extends Component {
 
 
   render() {
+    const { user, interests } = this.props
     return (
       <div className="App">
-        {[this.state.users].map(user =>
-          <div pageWrapId={"page-wrap"}>
-            <main id="page-wrap">
-              <Menu
-                isOpen={true}
-                noOverlay
-                customBurgerIcon={false}
-                customCrossIcon={false}
-              >
-                <div>
-                  <Image
-                    src={`https://robohash.org/${user.email}.png?set=set4`}
-                    roundedCircle
-                    fluid
-                  />
-                </div>
-                <div style={{ padding: '20px' }}>
-                  <h3 id="about" className="menu-item">{user.first_name} {user.last_name}</h3>
-                  <br />
-                  <h4 id="about" className="menu-item"> {user.email} </h4>
-                  <br />
-                  <h4 id="about" className="menu-item"> Interests </h4>
-                  {[user.interests].map(interest => { return (<div>{interest}</div>) })}
-                  <br />
-                </div>
-              </Menu>
-            </main>
-          </div>
-        )
-        }
+        <div pageWrapId={"page-wrap"}>
+          <main id="page-wrap">
+            <Menu
+              isOpen={true}
+              noOverlay
+              customBurgerIcon={false}
+              customCrossIcon={false}
+            >
+              <div>
+                <Image
+                  src={`https://robohash.org/${user.email}.png?set=set4`}
+                  roundedCircle
+                  fluid
+                />
+              </div>
+              <div style={{ padding: '20px' }}>
+                <h3 id="about" className="menu-item">{user.first_name} {user.last_name}</h3>
+                <br />
+                <h4 id="about" className="menu-item"> {user.email} </h4>
+                <br />
+                <h4 id="about" className="menu-item"> Interests </h4>
+                {[user.interests].map(interest => { return (<div>{interest}</div>) })}
+                <br />
+              </div>
+            </Menu>
+          </main>
+        </div>
+
       </div>
     )
   }

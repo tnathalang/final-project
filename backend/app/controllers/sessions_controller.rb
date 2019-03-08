@@ -1,7 +1,13 @@
 class SessionsController < ApiController
     skip_before_action :require_login, only: [:create], raise: false
     
+    def update
+      if current_user
+        send_auth_token_for_valid_login_of(current_user)
+      end
+    end
     def create
+      puts params
       # TODO: fix user table so no duplicate emails on registration
       if user = User.valid_login?(params[:email], params[:password])
         allow_token_to_be_used_only_once_for(user)
@@ -18,7 +24,16 @@ class SessionsController < ApiController
     
     private
     def send_auth_token_for_valid_login_of(user)
-      render json: { token: user.auth_token }
+      render json: { 
+        user: {
+          token: user.auth_token,
+          first_name: user.first_name,
+          last_name: user.last_name,
+          email: user.email,
+          id: user.id
+        },
+        interests: user.interests
+      }
     end
     
     def allow_token_to_be_used_only_once_for(user)

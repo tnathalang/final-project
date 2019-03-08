@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import { Link } from "react-router-dom"
 
 class Header extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class Header extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">UserName</NavLink>
+                <Link to="/home">Home</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">LogIn/LogOut</NavLink>

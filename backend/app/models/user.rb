@@ -17,6 +17,7 @@ class User < ApplicationRecord
       
     #built-in authenticate method with bcrypt with hashes password 
     def self.valid_login?(email, password)
+        puts email
         user = find_by(email: email)
         if user && user.authenticate(password)
           user
