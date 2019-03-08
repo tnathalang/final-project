@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import { Link } from "react-router-dom"
 
 class Header extends Component {
   constructor(props) {
@@ -29,19 +30,14 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
-        {/* <a href="/?bob">Bob</a>
-        <a href="/?bob1">Bob1</a>
-        <a href="/?bob2">Bob2</a>
-        {window.location.search.substr(1)} */}
-
+      <header style={{ marginTop: '80px' }}>
         <Navbar fixed="top" style={{ zIndex: '11', height: '80px' }} color="light" light expand="xl">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">UserName</NavLink>
+                <Link to="/home">Home</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">LogIn/LogOut</NavLink>
@@ -66,7 +62,7 @@ class Header extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </header>
     );
   }
 }

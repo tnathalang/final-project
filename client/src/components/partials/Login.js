@@ -1,89 +1,82 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
+import Auth from '../../modules/Auth';
+import { Link, withRouter } from 'react-router-dom'
+
+
 
 class Login extends Component {
-
-
-  constructor() {
-    super();
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-//comment !
-
-//* LOGIN FORM!! CHANGE FOR AXIOS!! */
-
-<<<<<<< HEAD
-=======
-
-//* LOGIN FORM!! CHANGE FOR AXIOS!! */
-
->>>>>>> 4a10bf37ae7d43f9b0cd1dcc274eeed1b830f634
-
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const data = new FormData(event.target);
+    const params = {
+      email: form.email.value,
+      password: form.password.value
+    }
 
-    fetch('/api/form-submit-url', {
-      method: 'POST',
-      body: data,
-    });
+    fetch("/login", {
+      method: "POST",
+      body: JSON.stringify(params),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => res.json()).then(res => {
+      Auth.authenticateToken(res.user.token)
+      this.props.onSuccessLogin(res)
+      this.props.history.push('/home')
+    })
   }
 
-
-  render () {
-
+  render() {
     return (
-          /*Form for Login*/
-          <div className="login">
-          {/* Row for Login */}
-            <Container>
-              <Row>
-                <Col></Col>
-                <Col xl={6}>
-                  <h2>Login</h2>
-                  <br />
-                </Col>
-                <Col></Col>
-              </Row>
+      /*Form for Login*/
+      <div className="login">
+        {/* Row for Login */}
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col xl={6}>
+              <h2>Login</h2>
+              <br />
+            </Col>
+            <Col></Col>
+          </Row>
 
           {/*Row for Login Form*/}
-              <Row>
-                <Col></Col>
-                <Col xl={6}>
+          <Row>
+            <Col></Col>
+            <Col xl={6}>
 
 
-{/* Form for on submit*/}
-                  <Form onSubmit={this.handleSubmit}>
-                    <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-{/* Input ?? */}
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
-                      </Form.Text>
+              {/* Form for on submit*/}
+              <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email</Form.Label>
+                  {/* Input ?? */}
+                  <Form.Control type="email" placeholder="Enter email" name="email" />
+                  <Form.Text className="text-muted">
+                  </Form.Text>
 
-                    </Form.Group>
+                </Form.Group>
 
-                    <Form.Group controlId="formBasicPassword">
-                      <Form.Label>Password</Form.Label>
-{/* Input?? */}
-                      <Form.Control type="password" placeholder="Password" />
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" name="password" />
 
-                    </Form.Group>
+                </Form.Group>
 
-                    <Button variant="primary" type="submit">
-                      Submit
+                <Button variant="primary" type="submit">
+                  Submit
                     </Button>
-                  </Form>
-                </Col>
-                <Col></Col>
+              </Form>
+            </Col>
+            <Col></Col>
 
-              </Row>
-            </Container>
-          </div>
+          </Row>
+        </Container>
+      </div>
     )
   }
 }
 
-export default Login;
+export default withRouter(Login);

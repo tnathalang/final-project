@@ -1,58 +1,43 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/partials/Header.js'
-import SideBar from './components/partials/Sidebar.js'
-import ProfileMatch from './components/partials/ProfileMatch.js'
-import PollDisplay from './components/partials/PollDisplay.js'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import Login from "./components/partials/Login"
+import Auth from './modules/Auth'
+import PrivateRoute from './modules/PrivateRoute'
+import Home from './components/Home'
+
+
 
 class App extends Component {
-  state = { currentUser: {}, users: [{}] }
-
-  setCurrentuser = () => {
-
+  constructor() {
+    super()
+    this.state = {
+      auth: Auth.isUserAuthenticated()
+    }
   }
+
+  onSuccessLogin = (currentUser) => {
+    this.setState({
+      user: currentUser.user,
+      interests: currentUser.interests
+    }, console.log(this.state))
+  }
+
+  onComponentDidMount
+
 
   render() {
     return (
-      <div >
-        <header style={{ marginTop: '80px' }}>
+      <Router>
+        <div >
           <Header />
-        </header>
-        {/*  If not logged in */}
-
-        <aside>
-          <SideBar setCurrentuser={this.setCurrentuser} />
-        </aside>
-
-        <main >
-
-          <div style={{ margin: '60px', paddingLeft: '280px' }}>
-            <Container style={{ display: 'flex' }}>
-              <Row>
-                <Col sm={12}>
-                  <ProfileMatch />
-                </Col>
-
-                <Col sm={12}>
-                  <PollDisplay />
-                </Col>
-                <Col sm>
-
-                </Col>
-              </Row>
-            </Container>
-          </div>
-
-        </main>
-
-        <footer>
-        </footer>
-      </div>
-
+          <Route path="/login" component={() => <Login onSuccessLogin={this.onSuccessLogin} />} />
+          <PrivateRoute path="/home" component={() => <Home user={this.state.user} interests={this.state.interests} />} />
+        </div>
+      </Router>
     );
   }
 }
 
-export default App;
+export default App
