@@ -10,24 +10,6 @@ import NewPoll from "./NewPoll.js"
 //The cards generated are hardCoded, these are made with reactBootstrap.
 //When we render we will delete tese hard coded nd import the fie from Profile Match card
 
-//HARD CODED CARD TO RENDER
-const myCard = [{
-  userName: 'George',
-  title: 'Hey Bloogers',
-  description: "LUNCH! Let's Do It! 12:00pm! 4th floor!"
-} ];
-const pollCards = [
-  {
-  userName: 'George',
-  title: 'Hey Bloogers',
-  description: "LUNCH! Let's Do It! 12:00pm! 4th floor!"
-},
-{
-  userName: 'Georgie',
-  title: 'Hey Bloogeeeerinoss',
-  description: "LUNCH! Let's Do It! 14:00pm! 4th floor!"
-}
-];
 
 
 class ListOfPolls extends React.Component {
@@ -79,16 +61,19 @@ class ListOfPolls extends React.Component {
                         </Card.Text>
                       </Card.Body>
                       <Card.Footer>
-                      <Form>
 
-                      <Button
-                        type="checkbox"
-                        variant="outline-light"
-                        onClick={this.handleClick}
-                      >
-                        {flip}
-                      </Button>
-                        </Form>
+                      <Form style={{display:'flex', alignItems:'center', justifyContent: 'space-between'}}>
+
+                        <Button
+                          type="checkbox"
+                          variant="outline-light"
+                          onClick={this.handleClick}
+                        >
+                          {flip}
+                        </Button>
+                        <div>0</div >
+
+                      </Form>
                       </Card.Footer>
                     </Card>
                   </Col>
