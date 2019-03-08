@@ -8,7 +8,7 @@ class UsersController < ApiController
         puts "----------"
         puts user.inspect
         user.save
-        # render json: {token:user.auth_token}
+        render json: {token:user.auth_token}
       # TODO: error handling
       rescue Exception
         puts "Houston, we got a problem"
