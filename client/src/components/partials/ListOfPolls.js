@@ -5,10 +5,7 @@ import NewPoll from "./NewPoll.js"
 
 //THE ACTUAL LIST OF ALL THE POLLS RENDERED
 
-
-//Profile Match container is made with reactstrap
-//The cards generated are hardCoded, these are made with reactBootstrap.
-//When we render we will delete tese hard coded nd import the fie from Profile Match card
+//hard coded 'likes'
 
 
 
@@ -19,22 +16,48 @@ class ListOfPolls extends React.Component {
 //STATE FOR THE LIKE BUTTON
     this.state = {
       joined: false,
+      like: 0,
+      likeUp: false
       //polls: this.props.polls,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.likeUp = this.likeUpClick.bind(this);
+    // this.likeDown = this.likeDown.bind(this);
   }
 
 //CLICK EVENT FOR THE LIKE BUTTON
-    handleClick(event) {
+  handleClick(event) {
     event.preventDefault();
-    this.setState({
-      joined: !this.state.joined
-    });
+      if (this.setState) {
+        this.setState({
+          joined: !this.state.joined,
+        })
+      }
   }
+
+  likeUpClick(event){
+      event.preventDefault();
+        if (this.setState) {
+          this.setState({
+            like: this.state.like += 1,
+            likeUp: this.state.likeUp = true,
+          })
+        } else {
+          this.setState({
+            like: this.state.like -= 1,
+            likeUp: this.state.likeUp = false
+          })
+        }
+  }
+
+  // likeUp(event){
+//}
 
   render () {
 
     const flip = this.state.joined ? 'See you then!' : 'Join?'
+
+
       return (
 
       <div>
@@ -68,10 +91,11 @@ class ListOfPolls extends React.Component {
                           type="checkbox"
                           variant="outline-light"
                           onClick={this.handleClick}
+                          onClick= {this.likeUpClick}
                         >
                           {flip}
                         </Button>
-                        <div>0</div >
+                        <div>{this.state.like}</div >
 
                       </Form>
                       </Card.Footer>
