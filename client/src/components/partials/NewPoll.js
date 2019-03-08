@@ -27,16 +27,8 @@ class NewPoll extends React.Component {
         host_id: 1,
         ...this.state
       }
-      //fetch for the polls
-      fetch('/api/v1/polls', {
-        method: 'POST',
-        body: JSON.stringify(params),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }).then(res => res.json()) //cause a prommise
-      .then(response => console.log('Success:', JSON.stringify(response)))
-      .catch(error => console.error('Error:', error));
+
+      this.props.submitNewPolls(params);
 
       this.setState({ title: '', description: '' }); //clear the field
     };

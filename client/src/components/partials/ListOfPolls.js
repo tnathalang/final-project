@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { Card, Form} from 'react-bootstrap';
+import NewPoll from "./NewPoll.js"
 
 //THE ACTUAL LIST OF ALL THE POLLS RENDERED
 
@@ -30,13 +31,13 @@ const pollCards = [
 
 
 class ListOfPolls extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
 //STATE FOR THE LIKE BUTTON
     this.state = {
       joined: false,
-      polls: pollCards
+      polls: this.props.polls,
     };
     this.handleClick = this.handleClick.bind(this);
   }
