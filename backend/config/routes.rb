@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
 
 
-  resources :polls
+
+
 
  
   resources :users
+
+
+ 
+
+  namespace :api do
+    namespace :v1 do
+      resources :polls
+    end
 
 
   post '/login', to: "sessions#create"

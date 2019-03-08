@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
 import ListOfPolls from './ListOfPolls.js'
-import CreatePoll from './CreatePoll.js'
+import NewPoll from './NewPoll.js'
 
+//THE POLL DISPLAY PAGE OF ALL THE COMPONENTS
 
 
 class PollDisplay extends React.Component {
@@ -11,7 +12,40 @@ class PollDisplay extends React.Component {
 
     this.state = {
       open: true,
+      polls: [],
     };
+
+    this.submitNewPolls = this.submitNewPolls.bind(this); //binding the this.
+  }
+    componentDidMount(){
+      this.fetchAllPolls();
+    }
+
+  submitNewPolls(params) {
+    fetch('/api/v1/polls', {
+      method: 'POST',
+      body: JSON.stringify(params),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => {
+      this.setState((state) =>{
+        return this.state.polls.push(res);
+      })
+    } ) //cause a prommise,
+     //.then(response => console.log('Success:', JSON.stringify(response)))
+    .catch(error => console.error('Error:', error));
+  }
+
+  fetchAllPolls() {
+    fetch('/api/v1/polls', {
+      method: 'GET',
+    }).then(res => {//create an index in controller and do same thing
+      this.setState((state) => {
+        return this.state.polls.push(res);
+        //WHAT DO I SET / DO!!!
+      })
+    })
   }
 
   render() {
@@ -42,7 +76,7 @@ class PollDisplay extends React.Component {
 {/* Form for testing*/}
           <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
 {/* List of Current Polls*/}
-            <ListOfPolls />
+            <ListOfPolls polls = {this.state.polls} />
 {/*Button to create a new poll */}
             <Row>
               <Col>
@@ -55,7 +89,7 @@ class PollDisplay extends React.Component {
               </Col>
             </Row>
 {/* Press the create Button */}
-            <CreatePoll />
+            <NewPoll submitNewPolls = {this.submitNewPolls}/>
 {/*If No Events */}
               <div>
 
