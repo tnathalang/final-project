@@ -13,14 +13,14 @@ class User < ApplicationRecord
     #uses for logout
     def invalidate_token
         self.update_columns(auth_token: nil)
-      end
+    end
       
-      #built-it authenticate method with bcrypt with hashes password 
+    #built-in authenticate method with bcrypt with hashes password 
     def self.valid_login?(email, password)
         user = find_by(email: email)
         if user && user.authenticate(password)
           user
         end
-     end
+    end
 
 end

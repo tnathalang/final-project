@@ -7,16 +7,17 @@ import PollDisplay from './components/partials/PollDisplay.js'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Login from "./components/partials/Login"
 import Sidebar from "./components/partials/Sidebar"
-import AuthService from './components/partials/AuthService';
-import withAuth from './components/withAuth';
-const Auth = new AuthService();
+import Auth from './modules/Auth'
+
 
 class App extends Component {
-  state = { currentUser: {}, users: [{}] }
-
-  setCurrentuser = () => {
-
+  constructor() {
+    super()
+    this.state = {
+      auth: Auth.isUserAuthenticated()
+    }
   }
+
 
   render() {
     return (
