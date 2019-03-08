@@ -12,7 +12,7 @@ class Home extends Component {
 
         return (
             <div>
-                <Sidebar />
+                <Sidebar user={this.props.user} interests={this.props.interests} />
                 <main >
                     <div style={{ margin: '60px', paddingLeft: '280px' }}>
                         <Container style={{ display: 'flex' }}>

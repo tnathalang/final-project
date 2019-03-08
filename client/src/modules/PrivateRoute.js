@@ -7,7 +7,6 @@ import Auth from './Auth'
 function PrivateRoute({ component: Component, ...rest }) {
 
 
-
     return (
         <Route
             {...rest}

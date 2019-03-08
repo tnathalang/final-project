@@ -24,7 +24,6 @@ class Login extends Component {
       Auth.authenticateToken(res.user.token)
       this.props.onSuccessLogin(res)
       this.props.history.push('/home')
-
     })
   }
 

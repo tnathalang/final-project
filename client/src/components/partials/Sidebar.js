@@ -6,13 +6,10 @@ import axios from 'axios'
 
 
 class SideBar extends Component {
-  state = {
-    users: [],
-  }
 
   componentDidMount() {
     axios
-      .get("http://localhost:3001/api/v1/users/1")
+      .get("")
       .then(response => {
         console.log(response);
         this.setState({
@@ -22,21 +19,11 @@ class SideBar extends Component {
       .catch(error => console.log(error));
   }
 
-  //   render() {
-  //     return (
-  //       <div className="App">
-  //         <h1>Users</h1>
-  //         {this.state.users.map(user =>
-  //           <div key={user.id} value={user.first_name}>{user.first_name}</div>
-  //         )}
-  //       </div>
-  //     );
-  //   }
-  // }
-
 
   render() {
     const { user, interests } = this.props
+    console.log("what is user", user)
+    console.log("what is interest", interests)
     return (
       <div className="App">
         <div pageWrapId={"page-wrap"}>
@@ -60,13 +47,12 @@ class SideBar extends Component {
                 <h4 id="about" className="menu-item"> {user.email} </h4>
                 <br />
                 <h4 id="about" className="menu-item"> Interests </h4>
-                {[user.interests].map(interest => { return (<div>{interest}</div>) })}
+                {interests.map(interest => { return (<div>{interest.topic}</div>) })}
                 <br />
               </div>
             </Menu>
           </main>
         </div>
-
       </div>
     )
   }

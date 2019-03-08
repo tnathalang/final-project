@@ -31,11 +31,6 @@ class Header extends Component {
   render() {
     return (
       <header style={{ marginTop: '80px' }}>
-        {/* <a href="/?bob">Bob</a>
-        <a href="/?bob1">Bob1</a>
-        <a href="/?bob2">Bob2</a>
-        {window.location.search.substr(1)} */}
-
         <Navbar fixed="top" style={{ zIndex: '11', height: '80px' }} color="light" light expand="xl">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
