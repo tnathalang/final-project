@@ -13,6 +13,12 @@ class Login extends Component {
 
 //* LOGIN FORM!! CHANGE FOR AXIOS!! */
 
+<<<<<<< HEAD
+=======
+
+//* LOGIN FORM!! CHANGE FOR AXIOS!! */
+
+>>>>>>> 4a10bf37ae7d43f9b0cd1dcc274eeed1b830f634
 
   handleSubmit(event) {
     event.preventDefault();
