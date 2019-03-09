@@ -12,7 +12,6 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
-import { Link } from "react-router-dom"
 
 class Header extends Component {
   constructor(props) {
@@ -32,15 +31,15 @@ class Header extends Component {
     return (
       <header style={{ marginTop: '80px' }}>
         <Navbar fixed="top" style={{ zIndex: '11', height: '80px' }} color="light" light expand="xl">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">PEAR UP </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/home">Home</Link>
+                <NavLink href="http://localhost:3000/login">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">LogIn/LogOut</NavLink>
+                <NavLink href="http://localhost:3000/login">LogIn | LogOut</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

@@ -1,45 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
 import { Card, Badge } from 'react-bootstrap';
+import axios from 'axios';
+import Auth from '../../modules/Auth'
 
-//Profile Match container is made with reactstrap
-//The cards generated are hardCoded, these are made with reactBootstrap.
-//When we render we will delete tese hard coded nd import the fie from Profile Match card
 
-const myMatch = [{
-  first_name: 'gude',
-  last_name: 'tama',
-  image: "https://steamuserimages-a.akamaihd.net/ugc/918042871153508715/BA9058FD48450707B232AD72DDC927C4C88E95AB/",
-  interests: ['sleeping', 'cats', 'bed',' nothing']
-} ];
+class ProfileMatch extends Component {
 
-const myMatches = [
-  {
-    first_name: 'gude',
-    last_name: 'tama',
-    image: "https://steamuserimages-a.akamaihd.net/ugc/918042871153508715/BA9058FD48450707B232AD72DDC927C4C88E95AB/",
-    interests: ['sleeping', 'cats', 'bed',' nothing']
-  } ,
-  {
-    first_name: 'gude',
-    last_name: 'tama',
-    image: "https://steamuserimages-a.akamaihd.net/ugc/918042871153508715/BA9058FD48450707B232AD72DDC927C4C88E95AB/",
-    interests: ['sleeping', 'cats', 'bed',' nothing']
+  state = { users: [] }
+
+  componentDidMount() {
+    console.log(Auth.getToken());
+    const instance = axios.create({
+      baseURL: 'http://localhost:3001',
+      timeout: 1000,
+      headers: {
+        'token': Auth.getToken(),
+        'Authorization': `Token token=${Auth.getToken()}`
+      }
+    });
+    instance
+      .get("/users.json")
+      .then(response => {
+        const interestsArray = this.props.interests.map(x => x.topic)
+        console.log(interestsArray)
+        const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
+        console.log(users)
+        this.setState({ users: users })
+      })
+      .catch(error => console.log(error));
   }
-];
 
 
-
-class ProfileMatch extends React.Component {
-  render(){
+  render() {
     return (
       <div>
-        <Container>
+        <Container >
           <Row>
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
 
-              {/*Toggle button to drop down the cards*/}
 
               <div class="input-group"><h2>Your Matches</h2>
 
@@ -50,7 +50,7 @@ class ProfileMatch extends React.Component {
 
               {/*Toggle buttons for refreshing the search and/or  inverting the search*/}
               <UncontrolledCollapse toggler="#toggler">
-                <Row>
+                {/* <Row>
                   <Col>
                     <Button style={{ margin: '10px', marginBottom: '1rem' }} outline color="success">
                       Refresh ↻
@@ -60,40 +60,34 @@ class ProfileMatch extends React.Component {
                       Invert ⇄
                   </Button>
                   </Col>
-                </Row>
+                </Row> */}
 
-                {/*Profile Cards generated*/}
                 <Row style={{ padding: '10px' }}>
                   <Col style={{ padding: '10px' }}>
-  {myMatches.map((data) =>
-                    <Card style={{ width: '16rem' }}>
-                      <Card.Img style={{ height: '15rem' }} variant="top" src={data.image} />
-                      <Card.Body>
-                        <Card.Title>NAME: {data.first_name} {data.last_name}</Card.Title>
-                        <Card.Text>
-
-{/* MAP OUT THE INTERESTS
-                          <Row>
-                            <Col><Badge variant="info">Cats</Badge></Col>
-                            <Col><Badge variant="info">Blooging</Badge></Col>
-                          </Row>
-                          <Row>
-                            <Col><Badge variant="info">Food</Badge></Col>
-                            <Col><Badge variant="info">Sleep</Badge></Col>
-                          </Row>
-*/}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-)}
+                    {this.state.users.map((user) =>
+                      <Card style={{ width: '16rem' }}>
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                        <Card.Body>
+                          <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
+                          <Card.Text>
+                            {user.interests.map(interest => {
+                              return (
+                                <Row>
+                                  <Col><Badge variant="info">{interest.topic}</Badge></Col>
+                                </Row>
+                              )
+                            })}
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    )}
                   </Col>
                 </Row>
               </UncontrolledCollapse>
             </Col>
-            <Col></Col>
           </Row>
         </Container>
-      </div>
+      </div >
     )
   }
 };

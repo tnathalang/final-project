@@ -18,11 +18,11 @@ class Home extends Component {
                         <Container style={{ display: 'flex' }}>
                             <Row>
                                 <Col sm={12}>
-                                    <ProfileMatch />
+                                    <ProfileMatch user={this.props.user} interests={this.props.interests} />
                                 </Col>
 
                                 <Col sm={12}>
-                                    <PollDisplay />
+                                    <PollDisplay user={this.props.user} interests={this.props.interests} />
                                 </Col>
                                 <Col sm>
 
