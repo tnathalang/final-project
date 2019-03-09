@@ -25,8 +25,6 @@ class ListOfPolls extends React.Component {
                 {this.props.polls.map((data) =>
                   <Col style={{ padding: '10px' }}>
 
-
-//POLL CARD
                   <Poll {...data} />
 
 
