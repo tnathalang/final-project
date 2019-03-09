@@ -68,7 +68,7 @@ class ProfileMatch extends Component {
                       <Card style={{ width: '16rem' }}>
                         <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
                         <Card.Body>
-                          <Card.Title> {user.first_name} {user.last_name}</Card.Title>
+                          <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
                           <Card.Text>
                             {user.interests.map(interest => {
                               return (
@@ -77,7 +77,6 @@ class ProfileMatch extends Component {
                                 </Row>
                               )
                             })}
-
                           </Card.Text>
                         </Card.Body>
                       </Card>
@@ -86,7 +85,6 @@ class ProfileMatch extends Component {
                 </Row>
               </UncontrolledCollapse>
             </Col>
-            <Col></Col>
           </Row>
         </Container>
       </div >
