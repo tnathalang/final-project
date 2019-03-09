@@ -2,44 +2,37 @@ import React, { Component } from 'react';
 import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
 import { Card, Badge } from 'react-bootstrap';
 import axios from 'axios';
+import Auth from '../../modules/Auth'
 
 
 class ProfileMatch extends Component {
 
+  state = { users: [] }
 
   componentDidMount() {
-    axios
-      .get("http://localhost:3001/users.json")
+    console.log(Auth.getToken());
+    const instance = axios.create({
+      baseURL: 'http://localhost:3001',
+      timeout: 1000,
+      headers: {
+        'token': Auth.getToken(),
+        'Authorization': `Token token=${Auth.getToken()}`
+      }
+    });
+    instance
+      .get("/users.json")
       .then(response => {
-        console.log(response);
-        this.setState({
-          resources: response.data
-        });
+        const interestsArray = this.props.interests.map(x => x.topic)
+        console.log(interestsArray)
+        const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
+        console.log(users)
+        this.setState({ users: users })
       })
       .catch(error => console.log(error));
   }
 
-  // currentUser.interests.map(Cinterest => {
-  // if(databseUser.interest.map(DBinterest => {
-  // if (DBinterest === Cinterest) {
-  //  return databseUser
-  // }
-  // })
-  // })
 
   render() {
-
-    const { user, interests } = this.props
-
-    const myMatches = [
-      {
-        first_name: user.first_name,
-        last_name: user.last_name,
-        image: `https://robohash.org/${user.email}.png?set=set4`,
-        interests: interests.topic
-      },
-    ];
-
     return (
       <div>
         <Container >
@@ -47,7 +40,6 @@ class ProfileMatch extends Component {
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
 
-              {/* Toggle button to drop down the cards */}
 
               <div class="input-group"><h2>Your Matches</h2>
 
@@ -58,7 +50,7 @@ class ProfileMatch extends Component {
 
               {/*Toggle buttons for refreshing the search and/or  inverting the search*/}
               <UncontrolledCollapse toggler="#toggler">
-                <Row>
+                {/* <Row>
                   <Col>
                     <Button style={{ margin: '10px', marginBottom: '1rem' }} outline color="success">
                       Refresh ↻
@@ -68,18 +60,17 @@ class ProfileMatch extends Component {
                       Invert ⇄
                   </Button>
                   </Col>
-                </Row>
+                </Row> */}
 
-                {/*Profile Cards generated*/}
                 <Row style={{ padding: '10px' }}>
                   <Col style={{ padding: '10px' }}>
-                    {myMatches.map((data) =>
+                    {this.state.users.map((user) =>
                       <Card style={{ width: '16rem' }}>
-                        <Card.Img style={{ height: '15rem' }} variant="top" src={data.image} />
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
                         <Card.Body>
-                          <Card.Title>NAME: {data.first_name} {data.last_name}</Card.Title>
+                          <Card.Title> {user.first_name} {user.last_name}</Card.Title>
                           <Card.Text>
-                            {interests.map(interest => {
+                            {user.interests.map(interest => {
                               return (
                                 <Row>
                                   <Col><Badge variant="info">{interest.topic}</Badge></Col>
@@ -98,7 +89,7 @@ class ProfileMatch extends Component {
             <Col></Col>
           </Row>
         </Container>
-      </div>
+      </div >
     )
   }
 };
