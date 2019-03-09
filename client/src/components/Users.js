@@ -47,4 +47,6 @@ class Users extends Component {
     }
 }
 
-export default Users;
+// export default Users;
+
+// will be use for when I RE-implement graphql in the backend

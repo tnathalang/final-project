@@ -2,28 +2,13 @@ import React, { Component } from "react";
 import { slide as Menu } from 'react-burger-menu'
 import Image from 'react-bootstrap/Image'
 import '../../assets/styles/SideBar.css'
-import axios from 'axios'
 
 
 class SideBar extends Component {
 
-  componentDidMount() {
-    axios
-      .get("")
-      .then(response => {
-        console.log(response);
-        this.setState({
-          users: response.data
-        });
-      })
-      .catch(error => console.log(error));
-  }
-
 
   render() {
     const { user, interests } = this.props
-    console.log("what is user", user)
-    console.log("what is interest", interests)
     return (
       <div className="App">
         <div pageWrapId={"page-wrap"}>
