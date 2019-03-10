@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
 import { Card, Badge } from 'react-bootstrap';
 import axios from 'axios';
-import Auth from '../../modules/Auth'
+import Auth from '../../modules/Auth';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import '../../assets/styles/App.css'
 
 
 class ProfileMatch extends Component {
@@ -33,6 +37,39 @@ class ProfileMatch extends Component {
 
 
   render() {
+
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: 'unslick',
+        }
+      ]
+  };
+
     return (
       <div>
         <Container >
@@ -59,27 +96,32 @@ class ProfileMatch extends Component {
                   </Col>
                 </Row> */}
 
-                <Row style={{ padding: '10px' }}>
-                  <Col style={{ padding: '10px' }}>
+
+                  <Slider {...settings}>
+
                     {this.state.users.map((user) =>
-                      <Card style={{ width: '16rem' }}>
-                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
-                        <Card.Body>
-                          <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
-                          <Card.Text>
-                            {user.interests.map(interest => {
-                              return (
-                                <Row>
-                                  <Col><Badge variant="info">{interest.topic}</Badge></Col>
-                                </Row>
-                              )
-                            })}
-                          </Card.Text>
-                        </Card.Body>
-                      </Card>
+                      <Col style={{ padding: '10px' }}>
+
+                        <Card style={{ width: '16rem' }}>
+                          <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                          <Card.Body>
+                            <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
+                            <Card.Text>
+                              {user.interests.map(interest => {
+                                return (
+                                  <Row>
+                                    <Col><Badge variant="info">{interest.topic}</Badge></Col>
+                                  </Row>
+                                )
+                              })}
+                            </Card.Text>
+                          </Card.Body>
+                        </Card>
+                      </Col>
                     )}
-                  </Col>
-                </Row>
+
+                  </Slider>
+
               </UncontrolledCollapse>
             </Col>
           </Row>
