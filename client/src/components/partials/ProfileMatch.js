@@ -65,7 +65,10 @@ class ProfileMatch extends Component {
         },
         {
           breakpoint: 480,
-          settings: 'unslick',
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
       ]
   };
@@ -113,7 +116,7 @@ class ProfileMatch extends Component {
                               {user.interests.map(interest => {
                                 return (
                                   <Row>
-                                    <Col><Badge variant="info">{interest.topic}</Badge></Col>
+                                    <h4><Badge variant="info">{interest.topic}</Badge></h4>
                                   </Row>
                                 )
                               })}

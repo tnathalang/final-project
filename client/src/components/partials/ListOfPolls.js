@@ -1,7 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
-import { Button, Card, Form} from 'react-bootstrap';
-import NewPoll from "./NewPoll.js"
+import { Col } from 'reactstrap';
 import Poll from "./Poll.js"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -42,7 +40,10 @@ class ListOfPolls extends React.Component {
         },
         {
           breakpoint: 480,
-          settings: 'unslick',
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
       ]
   };
