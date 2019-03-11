@@ -28,6 +28,9 @@ class ProfileMatch extends Component {
       .then(response => {
         const interestsArray = this.props.interests.map(x => x.topic)
         console.log(interestsArray)
+        //map first then adds numbers of comnmon interests, sort on key of the obejct 
+        //find a way to count numbers of interests in common
+        //sort according to the number
         const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
         console.log(users)
         this.setState({ users: users })
@@ -68,7 +71,7 @@ class ProfileMatch extends Component {
           settings: 'unslick',
         }
       ]
-  };
+    };
 
     return (
       <div>
@@ -97,30 +100,30 @@ class ProfileMatch extends Component {
                 </Row> */}
 
 
-                  <Slider {...settings}>
+                <Slider {...settings}>
 
-                    {this.state.users.map((user) =>
-                      <Col style={{ padding: '10px' }}>
+                  {this.state.users.map((user) =>
+                    <Col style={{ padding: '10px' }}>
 
-                        <Card style={{ width: '16rem' }}>
-                          <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
-                          <Card.Body>
-                            <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
-                            <Card.Text>
-                              {user.interests.map(interest => {
-                                return (
-                                  <Row>
-                                    <Col><Badge variant="info">{interest.topic}</Badge></Col>
-                                  </Row>
-                                )
-                              })}
-                            </Card.Text>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    )}
+                      <Card style={{ width: '16rem' }}>
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                        <Card.Body>
+                          <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
+                          <Card.Text>
+                            {user.interests.map(interest => {
+                              return (
+                                <Row>
+                                  <Col><Badge variant="info">{interest.topic}</Badge></Col>
+                                </Row>
+                              )
+                            })}
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
 
-                  </Slider>
+                </Slider>
 
               </UncontrolledCollapse>
             </Col>
@@ -131,5 +134,4 @@ class ProfileMatch extends Component {
   }
 };
 
-//Exporting the File
 export default ProfileMatch;
