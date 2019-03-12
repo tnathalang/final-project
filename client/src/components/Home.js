@@ -3,6 +3,7 @@ import Sidebar from "./partials/Sidebar"
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfileMatch from './partials/ProfileMatch.js'
 import PollDisplay from './partials/PollDisplay.js'
+import Calendar from './partials/Calendar.js'
 
 
 class Home extends Component {
@@ -25,7 +26,9 @@ class Home extends Component {
                                     <PollDisplay user={this.props.user} interests={this.props.interests} />
                                 </Col>
                                 <Col sm>
-
+                                <Col sm={12}>
+                                    <Calendar user={this.props.user} interests={this.props.interests} />
+                                </Col>
                                 </Col>
                             </Row>
                         </Container>
