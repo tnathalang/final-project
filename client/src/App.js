@@ -6,6 +6,8 @@ import Login from "./components/partials/Login"
 import Auth from './modules/Auth'
 import PrivateRoute from './modules/PrivateRoute'
 import Home from './components/Home'
+import './assets/styles/index.css';
+import './assets/styles/App.css';
 
 
 
