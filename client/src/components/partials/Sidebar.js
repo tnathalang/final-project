@@ -21,7 +21,7 @@ class SideBar extends Component {
             >
               <div>
                 <Image
-                  src={`https://robohash.org/${user.email}.png?set=set4`}
+                  src={user.avatar_url}
                   roundedCircle
                   fluid
                 />

@@ -7,6 +7,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# https://uifaces.co/api?limit=19&emotion[]=happiness&from_age=18&fto_age=40
+
+
 User.destroy_all
 Interest.destroy_all
 puts "Users were being burn alive"
@@ -42,22 +45,36 @@ puts "generating interests"
     
     puts "Resurrecting a better version of the users"
 
-    user = User.create first_name: "Mister", last_name: "Meowyagi", email: "mrmeowyagi@cats.com", password: "meowster"
-    4.times do
-        user.interests << (Interest.all - user.interests).sample
-    end
-
+    user = User.create first_name: "Alex", last_name: "Smith", email: "mrmeowyagi@cats.com", password: "meowster", avatar_url: "https://randomuser.me/api/portraits/men/11.jpg"
+    interests = [
+        Interest.find_by_topic("React.JS"), 
+        Interest.find_by_topic("Ruby on Rails"), 
+        Interest.find_by_topic("SpaceX"), 
+        Interest.find_by_topic("Coffee")
+    ]
+    user.interests << interests
     user.save
 
-    19.times do 
-        user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: Faker::Internet.password
+    4.times do |t|
+        user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: Faker::Internet.password, avatar_url: "https://randomuser.me/api/portraits/#{t % 2 == 0 ? "women" : "men"}/#{rand(1..60)}.jpg"
+        2.times do 
+            user.interests << ((interests) - user.interests).sample
+        end
+        2.times do
+            user.interests << (Interest.all - user.interests).sample
+        end
+        user.save
+    end
+
+    19.times do |t|
+        user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: Faker::Internet.password, avatar_url: "https://randomuser.me/api/portraits/#{t % 2 == 0 ? "women" : "men"}/#{rand(1..60)}.jpg"
        4.times do
         user.interests << (Interest.all - user.interests).sample
        end
        user.save
     end 
 
-puts "Seed process completed"
+# puts "Seed process completed"
 
 
 

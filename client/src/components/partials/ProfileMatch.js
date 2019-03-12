@@ -50,7 +50,7 @@ class ProfileMatch extends Component {
 
     var settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -117,7 +117,7 @@ class ProfileMatch extends Component {
                     <Col style={{ padding: '10px' }}>
 
                       <Card style={{ width: '16rem' }}>
-                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={user.avatar_url} />
                         <Card.Body>
                           <Card.Title>
                             {user.first_name} {user.last_name}

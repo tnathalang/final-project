@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .App-logo {
@@ -73,6 +74,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  z-index: -1!important;
 }
 
 /* General sidebar styles */
@@ -103,6 +105,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
+.nav-link { 
+  display: inline-block;
+  background-color:rgba(255,255,255, 0.5);
+  width: 10em;
+}
 
 /*====================*/
 /* THE SCROLL BARS*/
