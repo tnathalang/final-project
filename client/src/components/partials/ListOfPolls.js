@@ -18,7 +18,7 @@ class ListOfPolls extends React.Component {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 0,
       slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
@@ -49,7 +49,7 @@ class ListOfPolls extends React.Component {
 
       return (
 
-      <div>
+    
        <Slider {...settings}>
 
          {this.props.polls.map((data) =>
@@ -62,7 +62,7 @@ class ListOfPolls extends React.Component {
          )}
 
         </Slider>
-      </div>
+
     );
   }
 }

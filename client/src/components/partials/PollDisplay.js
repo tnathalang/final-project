@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
+import { UncontrolledCollapse} from 'reactstrap';
+
 import ListOfPolls from './ListOfPolls.js'
 import NewPoll from './NewPoll.js'
 
@@ -71,11 +73,12 @@ class PollDisplay extends React.Component {
             onClick={() => this.setState({ open: !open })}
             aria-controls="example-collapse-text"
             aria-expanded={open}
+            id="togg"
           >
             ↑ ↓
           </Button>
         </div>
-        <Collapse in={this.state.open}>
+        <UncontrolledCollapse toggler="#togg">
 {/* Form for testing*/}
           <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
 {/* List of Current Polls*/}
@@ -101,7 +104,7 @@ class PollDisplay extends React.Component {
               </div>
 
           </div>
-        </Collapse>
+        </UncontrolledCollapse>
         </Col>
         <Col></Col>
         </Row>
