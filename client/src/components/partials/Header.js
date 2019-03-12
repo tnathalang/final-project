@@ -41,7 +41,7 @@ class Header extends Component {
               <NavItem>
                 <NavLink href="http://localhost:3000/login">LogIn | LogOut</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+              {/*}<UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options
                 </DropdownToggle>
@@ -57,7 +57,7 @@ class Header extends Component {
                     Chat
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
             </Nav>
           </Collapse>
         </Navbar>
