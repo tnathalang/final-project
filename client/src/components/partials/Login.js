@@ -59,7 +59,7 @@ class Login extends Component {
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
-                  Submit
+                  Login
                     </Button>
               </Form>
 
@@ -67,9 +67,10 @@ class Login extends Component {
               <br />
               <br/>
               <h3>
-              <img src={'./'} />
               Let your meetings be fruitful.
-              A matching/pairing/pearing app to make friends in your workspace/Uni
+              <br/>
+              <br/>
+              A connecting app to make friends within your workspace or community!
               </h3>
 
 

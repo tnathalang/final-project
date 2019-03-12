@@ -49,7 +49,7 @@ class NewPoll extends React.Component {
                 <Col xl={6}>
                   <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                      <Form.Label>Create a New Poll</Form.Label>
+                      <Form.Label>{this.props.first_name}</Form.Label>
                       <Form.Control
                         name= "title"
                         type="text"

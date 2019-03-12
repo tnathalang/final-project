@@ -49,13 +49,16 @@ class ListOfPolls extends React.Component {
 
       return (
 
-    
+
        <Slider {...settings}>
 
          {this.props.polls.map((data) =>
            <Col style={{ padding: '10px' }}>
 
-            <Poll {...data} />
+            <Poll
+              {...data}
+              user={this.props.user} interests={this.props.interests}
+            />
 
 
            </Col>
