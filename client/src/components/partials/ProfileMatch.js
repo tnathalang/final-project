@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
+import { UncontrolledCollapse, Button, Row, Col, Container, CardSubtitle, CardLink } from 'reactstrap';
 import { Card, Badge } from 'react-bootstrap';
 import axios from 'axios';
 import Auth from '../../modules/Auth';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../assets/styles/App.css'
+import '../../assets/styles/App.css';
+import _ from 'lodash';
 
 
 class ProfileMatch extends Component {
@@ -28,7 +29,16 @@ class ProfileMatch extends Component {
       .then(response => {
         const interestsArray = this.props.interests.map(x => x.topic)
         console.log(interestsArray)
-        const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
+        //map first then adds numbers of comnmon interests, sort on key of the obejct 
+        //find a way to count numbers of interests in common
+        //sort according to the number
+        const users = response.data.map(u => {
+          const interestInCommon = _.intersection(interestsArray, u.interests.map(x => x.topic)).length
+          return {
+            ...u, interestInCommon
+          }
+        }).filter(u => u.interestInCommon > 0).sort((a, b) => b.interestInCommon - a.interestInCommon)
+        // const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
         console.log(users)
         this.setState({ users: users })
       })
@@ -68,7 +78,7 @@ class ProfileMatch extends Component {
           settings: 'unslick',
         }
       ]
-  };
+    };
 
     return (
       <div>
@@ -76,15 +86,12 @@ class ProfileMatch extends Component {
           <Row>
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
-
-
               <div class="input-group"><h2>Your Matches</h2>
 
                 <Button style={{ marginLeft: '20px', marginBottom: '1rem' }} outline color="info" id="toggler">
                   ▽
               </Button>
               </div>
-
               {/*Toggle buttons for refreshing the search and/or  inverting the search*/}
               <UncontrolledCollapse toggler="#toggler">
                 {/* <Row>
@@ -100,30 +107,42 @@ class ProfileMatch extends Component {
                 </Row> */}
 
 
-                  <Slider {...settings}>
+                <Slider {...settings}>
 
-                    {this.state.users.map((user) =>
-                      <Col style={{ padding: '10px' }}>
+                  {this.state.users.map((user) =>
+                    <Col style={{ padding: '10px' }}>
 
-                        <Card style={{ width: '16rem' }}>
-                          <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
-                          <Card.Body>
-                            <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
-                            <Card.Text>
-                              {user.interests.map(interest => {
-                                return (
-                                  <Row>
-                                    <Col><Badge variant="info">{interest.topic}</Badge></Col>
-                                  </Row>
-                                )
-                              })}
-                            </Card.Text>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    )}
+                      <Card style={{ width: '16rem' }}>
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                        <Card.Body>
+                          <Card.Title>
+                            {user.first_name} {user.last_name}
 
-                  </Slider>
+                          </Card.Title>
+                          <CardSubtitle>
+                            {user.email}
+                          </CardSubtitle>
+                          <Card.Text>
+                            {user.interests.map(interest => {
+                              return (
+                                <Row>
+                                  <Col><Badge variant="info">{interest.topic}</Badge></Col>
+                                </Row>
+                              )
+                            })}
+                            <CardSubtitle>
+                              Common Interest(s): {user.interestInCommon}
+                            </CardSubtitle>
+                            <a class="btn btn-secondary btn-lg active btn-sm"
+                              href={`mailto:${user.email}`}>Link With Me</a>
+
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
+
+                </Slider>
 
               </UncontrolledCollapse>
             </Col>
@@ -134,5 +153,4 @@ class ProfileMatch extends Component {
   }
 };
 
-//Exporting the File
 export default ProfileMatch;

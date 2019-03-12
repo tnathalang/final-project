@@ -13,9 +13,24 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      auth: Auth.isUserAuthenticated()
+      auth: Auth.isUserAuthenticated(),
+      user: Auth.getUser()
     }
   }
+
+  // componentDidMount() {
+  //   console.log(Auth.getToken());
+  //   const instance = axios.create({
+  //     baseURL: 'http://localhost:3001',
+  //     timeout: 1000,
+  //     headers: {
+  //       'token': Auth.getToken(),
+  //       'Authorization': `Token token=${Auth.getToken()}`
+  //     }
+  //   });
+  //   instance
+  //     .get("/session")
+  //     .then(response => {response
 
   onSuccessLogin = (currentUser) => {
     this.setState({
@@ -30,7 +45,7 @@ class App extends Component {
         <div >
           <Header />
           <Route path="/login" component={() => <Login onSuccessLogin={this.onSuccessLogin} />} />
-          <PrivateRoute path="/home" component={() => <Home user={this.state.user} interests={this.state.interests} />} />
+          <PrivateRoute path="/home" component={() => <Home user={this.state.user} interests={this.state.interests || []} />} />
         </div>
       </Router>
     );

@@ -1,6 +1,6 @@
 class SessionsController < ApiController
-    skip_before_action :require_login, only: [:create], raise: false
-    
+    # skip_before_action :require_login, only: [:create], raise: false
+    before_action :require_login, except: [:create]
     def update
       if current_user
         send_auth_token_for_valid_login_of(current_user)
@@ -21,6 +21,11 @@ class SessionsController < ApiController
       logout
       render json: { message: "logged out"}
     end
+
+    def current
+      puts authenticate_token.inspect
+      render json: authenticate_token 
+    end 
     
     private
     def send_auth_token_for_valid_login_of(user)

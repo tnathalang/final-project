@@ -4,6 +4,10 @@ class Auth {
         localStorage.setItem('token', token);
     }
 
+    static authenticateUser(user) {
+        localStorage.setItem('user', user)
+    }
+
     static isUserAuthenticated() {
         return localStorage.getItem('token') !== null;
     }
@@ -14,6 +18,9 @@ class Auth {
 
     static getToken() {
         return localStorage.getItem('token');
+    }
+    static getUser() {
+        return localStorage.getItem('user')
     }
 
 }
