@@ -3,8 +3,6 @@ import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import Auth from '../../modules/Auth';
 import { Link, withRouter } from 'react-router-dom'
 
-
-
 class Login extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
@@ -64,6 +62,17 @@ class Login extends Component {
                   Submit
                     </Button>
               </Form>
+
+              <br />
+              <br />
+              <br/>
+              <h3>
+              <img src={'./'} />
+              Let your meetings be fruitful.
+              A matching/pairing/pearing app to make friends in your workspace/Uni
+              </h3>
+
+
             </Col>
             <Col></Col>
 

@@ -15,7 +15,7 @@ class Calendar extends Component {
           scrolling="no">
         </iframe>
         <p>
-          <a href="https://calendar.google.com/calendar/r/eventedit?sf=true"
+          <a target="_blank" href="https://calendar.google.com/calendar/r/eventedit?sf=true"
             class="cta gmail-show">Save the date</a>
         </p>
       </div>
