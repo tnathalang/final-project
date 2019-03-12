@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Collapse, Col, Row, Button } from 'react-bootstrap';
-import { UncontrolledCollapse} from 'reactstrap';
+import { UncontrolledCollapse } from 'reactstrap';
 
 import ListOfPolls from './ListOfPolls.js'
 import NewPoll from './NewPoll.js'
@@ -67,32 +67,32 @@ class PollDisplay extends React.Component {
                     Open Polls
           </h2>
 
-          <Button
-            variant="outline-info"
-            style={{ marginLeft: '20px', marginBottom: '1rem' }}
-            onClick={() => this.setState({ open: !open })}
-            aria-controls="example-collapse-text"
-            aria-expanded={open}
-            id="togg"
-          >
-            ↑ ↓
+                  <Button
+                    variant="outline-info"
+                    style={{ marginLeft: '20px', marginBottom: '1rem' }}
+                    onClick={() => this.setState({ open: !open })}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}
+                    id="togg"
+                  >
+                    ↑ ↓
           </Button>
-        </div>
-        <UncontrolledCollapse toggler="#togg">
-{/* Form for testing*/}
-          <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
-{/* List of Current Polls*/}
-            <ListOfPolls
-              polls = {this.state.polls}
-            />
-{/*Button to create a new poll */}
-            <Row>
-              <Col>
-              <Button
-                style={{ margin: '10px', marginBottom: '1rem' }}
-                variant="outline-success"
-              >
-                Create A New Poll+
+                </div>
+                <UncontrolledCollapse toggler="#togg">
+                  {/* Form for testing*/}
+                  <div style={{ margin: '10px', marginBottom: '1rem' }} id="example-collapse-text">
+                    {/* List of Current Polls*/}
+                    <ListOfPolls
+                      polls={this.state.polls}
+                    />
+                    {/*Button to create a new poll */}
+                    <Row>
+                      <Col>
+                        <Button
+                          style={{ margin: '10px', marginBottom: '1rem' }}
+                          variant="outline-success"
+                        >
+                          Create A New Poll+
               </Button>
                       </Col>
                     </Row>
@@ -104,24 +104,11 @@ class PollDisplay extends React.Component {
                     </div>
 
                   </div>
-                </Collapse>
+                </UncontrolledCollapse>
               </Col>
               <Col></Col>
             </Row>
-
-{/* Press the create Button */}
-            <NewPoll submitNewPolls = {this.submitNewPolls}/>
-{/*If No Events */}
-              <div>
-
-              </div>
-
-          </div>
-        </UncontrolledCollapse>
-        </Col>
-        <Col></Col>
-        </Row>
-        </Container>
+          </Container>
         </div>
       </>
     );
@@ -131,7 +118,3 @@ class PollDisplay extends React.Component {
 export default PollDisplay;
 
 
-
-/*
-
-*/
