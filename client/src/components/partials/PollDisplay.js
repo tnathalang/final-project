@@ -64,8 +64,8 @@ class PollDisplay extends React.Component {
               <Col xl={12}>
                 <div class="input-group">
                   <h2>
-                    Open Polls
-          </h2>
+                    Open Pear-to-Pear Meet-Ups
+                  </h2>
 
                   <Button
                     variant="outline-info"

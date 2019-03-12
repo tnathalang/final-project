@@ -31,7 +31,7 @@ class Header extends Component {
     return (
       <header style={{ marginTop: '80px' }}>
         <Navbar fixed="top" style={{ zIndex: '11', height: '80px' }} color="light" light expand="xl">
-          <NavbarBrand href="/">PEAR UP </NavbarBrand>
+          <NavbarBrand href="/">PEAR UP</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

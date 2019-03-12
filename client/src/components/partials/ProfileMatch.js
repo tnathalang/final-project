@@ -29,7 +29,7 @@ class ProfileMatch extends Component {
       .then(response => {
         const interestsArray = this.props.interests.map(x => x.topic)
         console.log(interestsArray)
-        //map first then adds numbers of comnmon interests, sort on key of the obejct 
+        //map first then adds numbers of comnmon interests, sort on key of the obejct
         //find a way to count numbers of interests in common
         //sort according to the number
         const users = response.data.map(u => {
@@ -86,7 +86,7 @@ class ProfileMatch extends Component {
           <Row>
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
-              <div class="input-group"><h2>Your Matches</h2>
+              <div class="input-group"><h2>Your Pears/Matches</h2>
 
                 <Button style={{ marginLeft: '20px', marginBottom: '1rem' }} outline color="info" id="toggler">
                   ▽

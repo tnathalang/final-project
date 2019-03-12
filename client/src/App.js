@@ -46,8 +46,11 @@ class App extends Component {
           <Header />
           <Route path="/login" component={() => <Login onSuccessLogin={this.onSuccessLogin} />} />
           <PrivateRoute path="/home" component={() => <Home user={this.state.user} interests={this.state.interests || []} />} />
+
         </div>
+
       </Router>
+
     );
   }
 }
