@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { UncontrolledCollapse, Button, Row, Col, Container } from 'reactstrap';
+import { UncontrolledCollapse, Button, Row, Col, Container, CardSubtitle, CardLink } from 'reactstrap';
 import { Card, Badge } from 'react-bootstrap';
 import axios from 'axios';
 import Auth from '../../modules/Auth';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../assets/styles/App.css'
+import '../../assets/styles/App.css';
+import _ from 'lodash';
 
 
 class ProfileMatch extends Component {
@@ -31,7 +32,13 @@ class ProfileMatch extends Component {
         //map first then adds numbers of comnmon interests, sort on key of the obejct 
         //find a way to count numbers of interests in common
         //sort according to the number
-        const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
+        const users = response.data.map(u => {
+          const interestInCommon = _.intersection(interestsArray, u.interests.map(x => x.topic)).length
+          return {
+            ...u, interestInCommon
+          }
+        }).filter(u => u.interestInCommon > 0).sort((a, b) => b.interestInCommon - a.interestInCommon)
+        // const users = response.data.filter(x => x.interests.filter(y => { return (interestsArray).indexOf(y.topic) >= 0 }).length > 0)
         console.log(users)
         this.setState({ users: users })
       })
@@ -108,7 +115,13 @@ class ProfileMatch extends Component {
                       <Card style={{ width: '16rem' }}>
                         <Card.Img style={{ height: '15rem' }} variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
                         <Card.Body>
-                          <Card.Title> {user.first_name} {user.last_name} {user.email}</Card.Title>
+                          <Card.Title>
+                            {user.first_name} {user.last_name}
+
+                          </Card.Title>
+                          <CardSubtitle>
+                            {user.email}
+                          </CardSubtitle>
                           <Card.Text>
                             {user.interests.map(interest => {
                               return (
@@ -117,6 +130,12 @@ class ProfileMatch extends Component {
                                 </Row>
                               )
                             })}
+                            <CardSubtitle>
+                              Common Interest(s): {user.interestInCommon}
+                            </CardSubtitle>
+                            <a class="btn btn-secondary btn-lg active btn-sm"
+                              href={`mailto:${user.email}`}>Link With Me</a>
+
                           </Card.Text>
                         </Card.Body>
                       </Card>

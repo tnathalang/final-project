@@ -46,6 +46,7 @@ puts "generating interests"
     4.times do
         user.interests << (Interest.all - user.interests).sample
     end
+
     user.save
 
     19.times do 
