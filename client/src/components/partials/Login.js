@@ -29,54 +29,47 @@ class Login extends Component {
     return (
       /*Form for Login*/
       <div className="login">
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col xl={6}>
-              <h2>Login</h2>
-              <br />
-            </Col>
-            <Col></Col>
-          </Row>
-          <Row>
-            <Col></Col>
-            <Col xl={6}>
-
-              <Form onSubmit={this.handleSubmit}>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email</Form.Label>
-                  {/* Input ?? */}
-                  <Form.Control type="email" placeholder="Enter email" name="email" />
-                  <Form.Text className="text-muted">
-                  </Form.Text>
-
-                </Form.Group>
-
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" name="password" />
-
-                </Form.Group>
-
-                <Button variant="primary" type="submit">
-                  Submit
-                    </Button>
-              </Form>
-
-              <br />
-              <br />
-              <br/>
-              <h3>
-              <img src={'./'} />
-              Let your meetings be fruitful.
-              A matching/pairing/pearing app to make friends in your workspace/Uni
-              </h3>
+        <Container style={{width: '75%', padding: '50px'}} >
 
 
-            </Col>
-            <Col></Col>
 
-          </Row>
+              <div style={{width: '75%', margin: '50px auto', padding: '4rem 2rem', borderRadius: '10px'}} className= 'bg-light border-radius-3 ma-4 shadow'>
+
+                <h2>Login</h2>
+                <br />
+
+                <Form onSubmit={this.handleSubmit} className= 'my-4' > {/*1-8 for y x for sides : pa = padding to all*/}
+                  <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email</Form.Label>
+                    {/* Input ?? */}
+                    <Form.Control type="email" placeholder="Enter email" name="email" />
+                    <Form.Text className="text-muted">
+                    </Form.Text>
+
+                  </Form.Group>
+
+                  <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" name="password" />
+
+                  </Form.Group>
+
+                  <Button variant="primary" type="submit">
+                    Login
+                  </Button>
+                </Form>
+
+                <div>
+                  <h3>
+                  Let your meetings be fruitful.
+                  <br/>
+                  A connecting app to make friends in your community!
+                  </h3>
+                </div>
+
+
+              </div>
+
         </Container>
       </div>
     )
