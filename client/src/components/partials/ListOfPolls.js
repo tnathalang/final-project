@@ -17,7 +17,7 @@ class ListOfPolls extends React.Component {
   render () {
     var settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 0,
       slidesToShow: 3,
       slidesToScroll: 1,
