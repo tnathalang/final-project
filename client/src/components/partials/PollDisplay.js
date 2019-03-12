@@ -91,17 +91,23 @@ class PollDisplay extends React.Component {
                         <Button
                           style={{ margin: '10px', marginBottom: '1rem' }}
                           variant="outline-success"
+                          onClick={() => this.setState({ open: !open })}
+                          aria-controls="example-collapse-text"
+                          aria-expanded={open}
+                          id="toog"
                         >
                           Create A New Poll+
               </Button>
                       </Col>
                     </Row>
+                  <UncontrolledCollapse toggler="#toog">
                     {/* Press the create Button */}
                     <NewPoll submitNewPolls={this.submitNewPolls} />
                     {/*If No Events */}
                     <div>
 
                     </div>
+                    </UncontrolledCollapse>
 
                   </div>
                 </UncontrolledCollapse>
@@ -116,5 +122,3 @@ class PollDisplay extends React.Component {
 }
 
 export default PollDisplay;
-
-
