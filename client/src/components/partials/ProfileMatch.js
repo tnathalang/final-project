@@ -119,12 +119,11 @@ class ProfileMatch extends Component {
 
                     <Col style={{ padding: '10px' }}>
 
-                      <Card style={{ width: '16rem', margin: 'auto' }}>
+                      <Card style={{ width: '16rem', margin: 'auto', borderRadius: '10px' }} className='bg-light border-radius-3 ma-4 shadow'>
                         <Card.Img style={{ height: '15rem' }} variant="top" src={user.avatar_url} />
                         <Card.Body>
                           <Card.Title>
                             {user.first_name} {user.last_name}
-
                           </Card.Title>
                           <CardSubtitle>
                             {user.email}
@@ -137,10 +136,10 @@ class ProfileMatch extends Component {
                                 </Row>
                               )
                             })}
-                            <CardSubtitle>
+                            <CardSubtitle style={{ marginTop: "0.25em" }}>
                               Common Interest(s): {user.interestInCommon}
                             </CardSubtitle>
-                            <a class="btn btn-secondary btn-lg active btn-sm"
+                            <a class="btn btn-secondary btn-lg active btn-sm" style={{ marginTop: "0.25em" }}
                               href={`mailto:${user.email}`}>Link With Me</a>
 
                           </Card.Text>
