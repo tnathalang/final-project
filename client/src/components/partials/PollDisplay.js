@@ -56,15 +56,13 @@ class PollDisplay extends React.Component {
   render() {
     const { open } = this.state;
     return (
-      <>
+
         <div>
           <Container>
-            <Row>
-              <Col style={{ padding: '10px' }}></Col>
-              <Col xl={12}>
+
                 <div class="input-group">
                   <h2>
-                    Open Pear-to-Pear Meet-Ups
+                    Current Hangouts
                   </h2>
 
                   <Button
@@ -88,6 +86,7 @@ class PollDisplay extends React.Component {
                     {/*Button to create a new poll */}
                     <Row>
                       <Col>
+                      <br />
                         <Button
                           style={{ margin: '10px', marginBottom: '1rem' }}
                           variant="outline-success"
@@ -96,7 +95,7 @@ class PollDisplay extends React.Component {
                           aria-expanded={open}
                           id="toog"
                         >
-                          Create A New Poll+
+                          Create A New Poll +
               </Button>
                       </Col>
                     </Row>
@@ -111,12 +110,10 @@ class PollDisplay extends React.Component {
 
                   </div>
                 </UncontrolledCollapse>
-              </Col>
-              <Col></Col>
-            </Row>
+
           </Container>
         </div>
-      </>
+
     );
   }
 }

@@ -43,13 +43,12 @@ class NewPoll extends React.Component {
     return (
           // Form for testing
           <div>
-            <Container>
-              <Row>
-                <Col></Col>
-                <Col xl={6}>
+            <Container
+              className= 'bg-light border-radius-3 ma-4 shadow'
+              style={{width: '75%', padding: '30px'}}>
+
                   <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                      <Form.Label>Create a New Poll</Form.Label>
                       <Form.Control
                         name= "title"
                         type="text"
@@ -72,9 +71,7 @@ class NewPoll extends React.Component {
                       Submit
                     </Button>
                   </Form>
-                </Col>
-                <Col></Col>
-              </Row>
+
             </Container>
           </div>
     )

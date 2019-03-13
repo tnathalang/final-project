@@ -90,7 +90,7 @@ class ProfileMatch extends Component {
           <Row>
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
-              <div class="input-group"><h2>Matches</h2>
+              <div class="input-group"><h2>My Matches</h2>
 
                 <Button style={{ marginLeft: '20px', marginBottom: '1rem' }} outline color="info" id="toggler">
                   ▽

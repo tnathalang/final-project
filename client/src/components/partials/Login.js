@@ -28,7 +28,7 @@ class Login extends Component {
   render() {
     return (
       /*Form for Login*/
-      <div className="login">
+      <div className="login" style={{backgroundColor: '#D2E2E0' }}>
         <Container style={{width: '75%', padding: '50px'}} >
 
 
