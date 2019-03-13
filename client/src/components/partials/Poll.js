@@ -63,27 +63,36 @@ class Poll extends React.Component {
 
       <Card
       id={this.props.id}
-      border="dark"
-      bg="info"
-      text="white"
-      style={{ width: '18rem', margin: 'auto'  }}
+      class="shadow-sm"
+      style={{ width: '18rem',
+       margin: 'auto',
+       backgroundColor: 'white	',
+       color: 'grey',
+       border: '#7f7f7f',
+       borderRadius: '10px'
+     }}
       >
 
-
-        <Card.Header>{this.props.user.first_name}</Card.Header>
         <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
+        <Card.Header>{this.props.user.first_name} {this.props.user.last_name} says: </Card.Header>
+        <div style={{ backgroundColor: 'white', borderRadius: '10px'}}>
+          <Card.Title style={{margin:'auto'}}><br/><span style={{ color: 'pink', fontWeight: 'bold'}}>・°☆.。</span>{this.props.title} <span style={{ color: 'pink', fontWeight: 'bold'}}>。.☆°・</span></Card.Title>
+          <br/>
           <Card.Text>
           {this.props.description}
           </Card.Text>
-        </Card.Body>
-        <Card.Footer>
+          <br/>
+          </div>
+
+          <br/>
+        <Card.Subtitle>
 
         <Form style={{display:'flex', alignItems:'center', justifyContent: 'space-between'}}>
 
           <Button
             type="checkbox"
-            variant="outline-light"
+            variant="outline-dark"
+            size="sm"
             onClick= {(e) => {
               this.comeUpClick(e,this.props.id)
               this.handleClick(e)
@@ -94,7 +103,8 @@ class Poll extends React.Component {
           <div>{this.state.come}</div >
 
         </Form>
-        </Card.Footer>
+        </Card.Subtitle>
+        </Card.Body>
       </Card>
 
     )
