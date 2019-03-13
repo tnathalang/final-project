@@ -92,7 +92,7 @@ class PollDisplay extends React.Component {
                       <br />
                         <Button
                           style={{ margin: '2rem', marginBottom: '2rem' }}
-                          variant="outline-success"
+                          variant= "light"
                           onClick={() => this.setState({ open: !open })}
                           aria-controls="example-collapse-text"
                           aria-expanded={open}

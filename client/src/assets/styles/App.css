@@ -106,7 +106,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-.nav-link { 
+.nav-link {
   display: inline-block;
   background-color:rgba(255,255,255, 0.5);
   width: 10em;
@@ -118,8 +118,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* actual styles */
 .slick-prev:before,
 .slick-next:before {
-  color: paleVioletRed;
+  color: #7f7f7f;
   overflow-x: hidden;
 }
-
-
