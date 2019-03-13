@@ -12,10 +12,10 @@ Register to our app, select your interests, once you're on the landing page, our
 * **React.JS**
 * **Rails 5.2 API**
 * **React Router**
-* **HTML 5/ CSS 5*
-* **PostgreSQL*
-* **Apollo* (Deprecated, will be re-implement in the future)
-* **GraphQL* (Deprecated, will be re-implement in the future)
+* **HTML 5/ CSS 5**
+* **PostgreSQL**
+* **Apollo** (Deprecated, will be re-implement in the future)
+* **GraphQL** (Deprecated, will be re-implement in the future)
 
 The original tech stack has GraphQL and Apollo which was not taught at [Lighthouse Labs](https://lighthouselabs.ca/web-bootcamp). However, we ran into a time problem and have to put it on hold.
 
