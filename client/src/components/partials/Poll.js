@@ -66,7 +66,7 @@ class Poll extends React.Component {
       class="shadow-sm"
       style={{ width: '18rem',
        margin: 'auto',
-       backgroundColor: 'AliceBlue',
+       backgroundColor: 'white	',
        color: 'grey',
        border: '#7f7f7f',
        borderRadius: '10px'
