@@ -9,7 +9,7 @@ class Calendar extends Component {
     return(
       <div>
       <Container>
-        <div class="input-group"><h2>My Calendar</h2>
+        <div class="input-group"><h2>View My Calendar</h2>
 
           <Button style={{ marginLeft: '20px', marginBottom: '1rem' }} outline color="info" id="cald">
             ▽

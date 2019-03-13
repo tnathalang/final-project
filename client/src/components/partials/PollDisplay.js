@@ -63,7 +63,7 @@ class PollDisplay extends React.Component {
                 <div class="input-group">
                   <h2>
 
-                    Current Hangouts
+                    Explore Current Hangouts
 
                   </h2>
 
@@ -98,7 +98,7 @@ class PollDisplay extends React.Component {
                           aria-expanded={open}
                           id="toog"
                         >
-                          Create A New Event+
+                          Create A New Hangout +
               </Button>
                       </Col>
                     </Row>
