@@ -124,7 +124,6 @@ class ProfileMatch extends Component {
                         <Card.Body>
                           <Card.Title>
                             {user.first_name} {user.last_name}
-
                           </Card.Title>
                           <CardSubtitle>
                             {user.email}
@@ -137,10 +136,10 @@ class ProfileMatch extends Component {
                                 </Row>
                               )
                             })}
-                            <CardSubtitle>
+                            <CardSubtitle style={{ marginTop: "0.25em" }}>
                               Common Interest(s): {user.interestInCommon}
                             </CardSubtitle>
-                            <a class="btn btn-secondary btn-lg active btn-sm"
+                            <a class="btn btn-secondary btn-lg active btn-sm" style={{ marginTop: "0.25em" }}
                               href={`mailto:${user.email}`}>Link With Me</a>
 
                           </Card.Text>
