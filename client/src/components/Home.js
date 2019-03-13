@@ -14,10 +14,11 @@ class Home extends Component {
         return (
             <div>
                 <Sidebar user={this.props.user} interests={this.props.interests} />
-                <main >
+                <main style={{backgroundColor: '#d1e1df'}} >
                     <div style={{ margin: '60px', paddingLeft: '280px' }}>
                         <Container style={{ display: 'flex' }}>
                             <Row>
+
                                 <Col sm={12}>
                                     <ProfileMatch user={this.props.user} interests={this.props.interests} />
                                 </Col>
@@ -25,11 +26,11 @@ class Home extends Component {
                                 <Col sm={12}>
                                     <PollDisplay user={this.props.user} interests={this.props.interests} />
                                 </Col>
-                                <Col sm>
+
                                 <Col sm={12}>
                                     <Calendar user={this.props.user} interests={this.props.interests} />
                                 </Col>
-                                </Col>
+
                             </Row>
                         </Container>
                     </div>
@@ -40,3 +41,20 @@ class Home extends Component {
 }
 
 export default Home
+
+
+
+// <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+//   <Tab eventKey="home" title="Home">
+//     <ProfileMatch user={this.props.user} interests={this.props.interests} />
+//
+//   </Tab>
+//   <Tab eventKey="profile" title="Profile">
+//     <PollDisplay user={this.props.user} interests={this.props.interests} />
+//
+//   </Tab>
+//   <Tab eventKey="contact" title="Contact" disabled>
+//     <Calendar user={this.props.user} interests={this.props.interests} />
+//
+//   </Tab>
+// </Tabs>;
