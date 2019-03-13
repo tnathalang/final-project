@@ -60,9 +60,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
+  margin-top: 1em;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item.menu-email {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.interest-title {
+  text-align: left;
+}
+.menu-item.interest li {
+  text-align: left;
 }
