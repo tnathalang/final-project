@@ -36,8 +36,20 @@ class Login extends Component {
 
               <div style={{width: '75%', margin: '50px auto', padding: '4rem 2rem', borderRadius: '10px'}} className= 'bg-light border-radius-3 ma-4 shadow'>
 
+              <div>
+                <h1>P<span style={{ color: '#20B2AA'}}>e</span>ar Up</h1>
+                <br/>
+                <h4>
+                Let your meetings be fruitful.
+                <br/>
+                A connecting app to make friends in your community!
+                </h4>
+              </div>
+              <br/>
+              <br/>
+
+
                 <h2>Login</h2>
-                <br />
 
                 <Form onSubmit={this.handleSubmit} className= 'my-4' > {/*1-8 for y x for sides : pa = padding to all*/}
                   <Form.Group controlId="formBasicEmail">
@@ -59,14 +71,6 @@ class Login extends Component {
                     Login
                   </Button>
                 </Form>
-
-                <div>
-                  <h3>
-                  Let your meetings be fruitful.
-                  <br/>
-                  A connecting app to make friends in your community!
-                  </h3>
-                </div>
 
 
               </div>
