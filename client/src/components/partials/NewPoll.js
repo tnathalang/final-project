@@ -45,9 +45,10 @@ class NewPoll extends React.Component {
           <div>
             <Container
               className= 'bg-light border-radius-3 ma-4 shadow'
-              style={{width: '75%', padding: '30px'}}>
+              style={{width: '75%', padding: '30px', borderRadius: '10px'}}>
 
-                  <Form onSubmit={this.onSubmit}>
+                  <Form onSubmit={this.onSubmit}
+                  >
                     <Form.Group controlId="exampleForm.ControlTextarea1">
 
                       <Form.Label>Create a New EVENT</Form.Label>
