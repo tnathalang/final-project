@@ -62,7 +62,9 @@ class PollDisplay extends React.Component {
 
                 <div class="input-group">
                   <h2>
+
                     Current Hangouts
+
                   </h2>
 
                   <Button
@@ -82,6 +84,7 @@ class PollDisplay extends React.Component {
                     {/* List of Current Polls*/}
                     <ListOfPolls
                       polls={this.state.polls}
+                      user={this.props.user}
                     />
                     {/*Button to create a new poll */}
                     <Row>
@@ -95,13 +98,15 @@ class PollDisplay extends React.Component {
                           aria-expanded={open}
                           id="toog"
                         >
-                          Create A New Poll +
+                          Create A New Event+
               </Button>
                       </Col>
                     </Row>
                   <UncontrolledCollapse toggler="#toog">
                     {/* Press the create Button */}
-                    <NewPoll submitNewPolls={this.submitNewPolls} />
+                    <NewPoll
+                      submitNewPolls={this.submitNewPolls}
+                    />
                     {/*If No Events */}
                     <div>
 

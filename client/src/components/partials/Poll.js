@@ -70,7 +70,7 @@ class Poll extends React.Component {
       >
 
 
-        <Card.Header>{this.props.userName} Says:</Card.Header>
+        <Card.Header>{this.props.user.first_name}</Card.Header>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
