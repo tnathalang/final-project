@@ -19,15 +19,15 @@ class Home extends Component {
                         <Container style={{ display: 'flex' }}>
                             <Row>
 
-                                <Col sm={12}>
+                                <Col sm={12} style={{ paddingBottom:'4em', paddingTop:'4em'}}>
                                     <ProfileMatch user={this.props.user} interests={this.props.interests} />
                                 </Col>
 
-                                <Col sm={12}>
+                                <Col sm={12} style={{ paddingBottom:'3em', paddingTop:'2em'}}>
                                     <PollDisplay user={this.props.user} interests={this.props.interests} />
                                 </Col>
 
-                                <Col sm={12}>
+                                <Col sm={12} style={{ paddingBottom:'4em', paddingTop:'2em'}}>
                                     <Calendar user={this.props.user} interests={this.props.interests} />
                                 </Col>
 
