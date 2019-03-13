@@ -66,7 +66,7 @@ class Poll extends React.Component {
       class="shadow-sm"
       style={{ width: '18rem',
        margin: 'auto',
-       backgroundColor: 'Snow',
+       backgroundColor: 'AliceBlue',
        color: 'grey',
        border: '#7f7f7f',
        borderRadius: '10px'
@@ -74,14 +74,17 @@ class Poll extends React.Component {
       >
 
         <Card.Body>
-        <Card.Header style={{ borderRadius: '10px'}}>{this.props.user.first_name} {this.props.user.last_name} says: </Card.Header>
-          <Card.Title><br/><span style={{ color: 'pink', fontWeight: 'bold'}}>・°☆.。</span>{this.props.title} <span style={{ color: 'pink', fontWeight: 'bold'}}>。.☆°・</span></Card.Title>
+        <Card.Header>{this.props.user.first_name} {this.props.user.last_name} says: </Card.Header>
+        <div style={{ backgroundColor: 'white', borderRadius: '10px'}}>
+          <Card.Title style={{margin:'auto'}}><br/><span style={{ color: 'pink', fontWeight: 'bold'}}>・°☆.。</span>{this.props.title} <span style={{ color: 'pink', fontWeight: 'bold'}}>。.☆°・</span></Card.Title>
           <br/>
           <Card.Text>
           {this.props.description}
           </Card.Text>
           <br/>
+          </div>
 
+          <br/>
         <Card.Subtitle>
 
         <Form style={{display:'flex', alignItems:'center', justifyContent: 'space-between'}}>
