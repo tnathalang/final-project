@@ -17,7 +17,7 @@ class ListOfPolls extends React.Component {
   render () {
     var settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 0,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -49,13 +49,16 @@ class ListOfPolls extends React.Component {
 
       return (
 
-    
+
        <Slider {...settings}>
 
          {this.props.polls.map((data) =>
            <Col style={{ padding: '10px' }}>
 
-            <Poll {...data} />
+            <Poll
+              {...data}
+              user={this.props.user} interests={this.props.interests}
+            />
 
 
            </Col>

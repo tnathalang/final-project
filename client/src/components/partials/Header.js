@@ -41,6 +41,9 @@ class Header extends Component {
               <NavItem>
                 <NavLink href="http://localhost:3000/login">LogIn | LogOut</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="http://localhost:3000/register">Register</NavLink>
+              </NavItem>
               {/*}<UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options

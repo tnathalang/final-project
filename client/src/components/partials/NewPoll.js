@@ -49,6 +49,8 @@ class NewPoll extends React.Component {
 
                   <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
+
+                      <Form.Label>Create a New EVENT</Form.Label>
                       <Form.Control
                         name= "title"
                         type="text"
