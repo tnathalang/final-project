@@ -66,7 +66,7 @@ class Poll extends React.Component {
       border="dark"
       bg="info"
       text="white"
-      style={{ width: '18rem' }}
+      style={{ width: '18rem', margin: 'auto'  }}
       >
 
 
