@@ -116,9 +116,11 @@ class ProfileMatch extends Component {
                 <Slider {...settings}>
 
                   {this.state.users.map((user) =>
-                    <Col >
-                      <Card style={{ width: '18rem' }}>
-                        <Card.Img  variant="top" src={`https://robohash.org/${user.email}.png?set=set4`} />
+                    <Col style={{ padding: '10px' }}>
+
+                      <Card style={{ width: '16rem' }}>
+                        <Card.Img style={{ height: '15rem' }} variant="top" src={user.avatar_url} />
+
                         <Card.Body>
                           <Card.Title>
                             {user.first_name} {user.last_name}

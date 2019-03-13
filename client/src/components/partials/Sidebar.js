@@ -21,18 +21,20 @@ class SideBar extends Component {
             >
               <div>
                 <Image
-                  src={`https://robohash.org/${user.email}.png?set=set4`}
+                  src={user.avatar_url}
                   roundedCircle
                   fluid
                 />
               </div>
-              <div style={{ padding: '20px' }}>
+              <div>
                 <h3 id="about" className="menu-item">{user.first_name} {user.last_name}</h3>
                 <br />
-                <h4 id="about" className="menu-item"> {user.email} </h4>
+                <h4 className="menu-item menu-email"> {user.email} </h4>
                 <br />
-                <h4 id="about" className="menu-item"> Interests </h4>
-                {interests.map(interest => { return (<div>{interest.topic}</div>) })}
+                <h4 className="interest-title">Interests</h4>
+                <ul id="about" className="menu-item interest">
+                  {interests.map(interest => { return (<li>{interest.topic}</li>) })}
+                </ul>
                 <br />
               </div>
             </Menu>

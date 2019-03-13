@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { Button, Card, Form} from 'react-bootstrap';
+import { Button, Card, Form } from 'react-bootstrap';
 import NewPoll from "./NewPoll.js"
 import Poll from "./Poll.js"
 import Slider from "react-slick";
@@ -14,7 +14,7 @@ import '../../assets/styles/App.css'
 
 class ListOfPolls extends React.Component {
 
-  render () {
+  render() {
     var settings = {
       dots: true,
       infinite: false,
@@ -45,15 +45,15 @@ class ListOfPolls extends React.Component {
           settings: 'unslick',
         }
       ]
-  };
+    };
 
-      return (
+    return (
 
 
-       <Slider {...settings}>
+      <Slider {...settings}>
 
-         {this.props.polls.map((data) =>
-           <Col style={{ padding: '10px' }}>
+        {this.props.polls.map((data) =>
+          <Col style={{ padding: '10px' }}>
 
             <Poll
               {...data}
@@ -61,10 +61,10 @@ class ListOfPolls extends React.Component {
             />
 
 
-           </Col>
-         )}
+          </Col>
+        )}
 
-        </Slider>
+      </Slider>
 
     );
   }

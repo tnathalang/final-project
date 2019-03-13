@@ -11,7 +11,7 @@ class UsersController < ApiController
       end
   
       def index
-         users = User.where.not(id: authenticate_token.id).as_json(only:[:id, :first_name, :last_name, :email], include: {interests: {only: [:topic] }})
+         users = User.where.not(id: authenticate_token.id).as_json(only:[:id, :first_name, :last_name, :email, :avatar_url], include: {interests: {only: [:topic] }})
          render json: users
       end
   end
