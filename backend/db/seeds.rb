@@ -55,6 +55,16 @@ puts "generating interests"
     user.interests << interests
     user.save
 
+    user = User.create first_name: "Alice", last_name: "Wonder", email: "alicewonder@mail.com", password: "meowster", avatar_url: "https://randomuser.me/api/portraits/women/2.jpg"
+    interests = [
+        Interest.find_by_topic("React.JS"), 
+        Interest.find_by_topic("Spicy Cuisine"), 
+        Interest.find_by_topic("Healthy Living"), 
+        Interest.find_by_topic("Tea")
+    ]
+    user.interests << interests
+    user.save
+
     4.times do |t|
         user = User.create first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: Faker::Internet.password, avatar_url: "https://randomuser.me/api/portraits/#{t % 2 == 0 ? "women" : "men"}/#{rand(1..60)}.jpg"
         2.times do 

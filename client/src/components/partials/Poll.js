@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { Button, Card, Form} from 'react-bootstrap';
+import { Button, Card, Form } from 'react-bootstrap';
 
 
 class Poll extends React.Component {
@@ -21,17 +21,17 @@ class Poll extends React.Component {
 
 
   //Click Event for the Join up and Don
-  comeUpClick (event) {
+  comeUpClick(event) {
     event.preventDefault();
     let id = this.props.id
     let newanswer = {
-        id: id,
-        comeUp: true
+      id: id,
+      comeUp: true
     }
-    if(!this.state.comeUp) {
+    if (!this.state.comeUp) {
       this.setState((prevState, props) => {
         return {
-          listofanswers : {id:newanswer},
+          listofanswers: { id: newanswer },
           come: prevState.come + 1,
           comeUp: true,
         };
@@ -55,55 +55,56 @@ class Poll extends React.Component {
   }
 
 
-  render () {
+  render() {
 
     const flip = this.state.joined ? 'See you then!' : 'Join?'
 
     return (
 
       <Card
-      id={this.props.id}
-      class="shadow-sm"
-      style={{ width: '18rem',
-       margin: 'auto',
-       backgroundColor: 'white	',
-       color: 'grey',
-       border: '#7f7f7f',
-       borderRadius: '10px'
-     }}
+        id={this.props.id}
+        class="shadow-sm"
+        style={{
+          width: '18rem',
+          margin: 'auto',
+          backgroundColor: 'white	',
+          color: 'grey',
+          border: '#7f7f7f',
+          borderRadius: '10px'
+        }}
       >
 
         <Card.Body>
-        <Card.Header>{this.props.user.first_name} {this.props.user.last_name} says: </Card.Header>
-        <div style={{ backgroundColor: 'white', borderRadius: '10px'}}>
-          <Card.Title style={{margin:'auto'}}><br/><span style={{ color: 'pink', fontWeight: 'bold'}}>・°☆.。</span>{this.props.title} <span style={{ color: 'pink', fontWeight: 'bold'}}>。.☆°・</span></Card.Title>
-          <br/>
-          <Card.Text>
-          {this.props.description}
-          </Card.Text>
-          <br/>
+          <Card.Header>{this.props.user.first_name} {this.props.user.last_name} says: </Card.Header>
+          <div style={{ backgroundColor: 'white', borderRadius: '10px' }}>
+            <Card.Title style={{ margin: 'auto' }}><br />{this.props.title}: </Card.Title>
+            <br />
+            <Card.Text>
+              {this.props.description}
+            </Card.Text>
+            <br />
           </div>
 
-          <br/>
-        <Card.Subtitle>
+          <br />
+          <Card.Subtitle>
 
-        <Form style={{display:'flex', alignItems:'center', justifyContent: 'space-between'}}>
+            <Form style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
-          <Button
-            type="checkbox"
-            variant="outline-dark"
-            size="sm"
-            onClick= {(e) => {
-              this.comeUpClick(e,this.props.id)
-              this.handleClick(e)
-            }}
-          >
-            {flip}
-          </Button>
-          <div>{this.state.come}</div >
+              <Button
+                type="checkbox"
+                variant="outline-dark"
+                size="sm"
+                onClick={(e) => {
+                  this.comeUpClick(e, this.props.id)
+                  this.handleClick(e)
+                }}
+              >
+                {flip}
+              </Button>
+              <div>{this.state.come}</div >
 
-        </Form>
-        </Card.Subtitle>
+            </Form>
+          </Card.Subtitle>
         </Card.Body>
       </Card>
 
