@@ -119,7 +119,7 @@ class ProfileMatch extends Component {
 
                     <Col style={{ padding: '10px' }}>
 
-                      <Card style={{ width: '16rem', margin: 'auto' }}>
+                      <Card style={{ width: '16rem', margin: 'auto', borderRadius: '10px' }} className='bg-light border-radius-3 ma-4 shadow'>
                         <Card.Img style={{ height: '15rem' }} variant="top" src={user.avatar_url} />
                         <Card.Body>
                           <Card.Title>
