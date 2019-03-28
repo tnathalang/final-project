@@ -59,24 +59,27 @@ class PollDisplay extends React.Component {
 
         <div>
           <Container>
-
+          <Row style={{ backgroundColor: 'rgba(255,255,255,0.5)', borderRadius: '10px' }}>
+            <Col style={{ padding: '10px' }}></Col>
+            <Col xl={12}>
                 <div class="input-group">
-                  <h2>
-
-                    Explore Current Hangouts
-
-                  </h2>
 
                   <Button
                     variant="outline-info"
-                    style={{ marginLeft: '20px', marginBottom: '1rem' }}
+                    style={{ marginLeft: '20px', marginRight: '20px', marginBottom: '1rem' }}
                     onClick={() => this.setState({ open: !open })}
                     aria-controls="example-collapse-text"
                     aria-expanded={open}
                     id="togg"
                   >
-                    ↑ ↓
-          </Button>
+                    ▶
+                  </Button>
+
+                  <h2>
+
+                    Explore Current Hangouts
+
+                  </h2>
                 </div>
                 <UncontrolledCollapse toggler="#togg">
                   {/* Form for testing*/}
@@ -115,7 +118,8 @@ class PollDisplay extends React.Component {
 
                   </div>
                 </UncontrolledCollapse>
-
+              </Col>
+            </Row>
           </Container>
         </div>
 

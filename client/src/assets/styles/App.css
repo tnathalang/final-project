@@ -74,7 +74,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
-  z-index: -1!important;
+  z-index: 1!important;
 }
 
 /* General sidebar styles */

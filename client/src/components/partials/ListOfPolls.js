@@ -42,7 +42,10 @@ class ListOfPolls extends React.Component {
         },
         {
           breakpoint: 480,
-          settings: 'unslick',
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
       ]
     };
