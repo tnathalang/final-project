@@ -15,8 +15,8 @@ class Home extends Component {
             <div>
                 <Sidebar user={this.props.user} interests={this.props.interests} />
                 <main style={{backgroundColor: '#d1e1df', marginLeft: '300px'}} >
-                    <div style={{ margin: '60px' }}>
-                        <Container style={{ display: 'flex' }}>
+                    <div style={{ margin: '60px auto' }}>
+                        <Container style={{ display: 'inherit' }}>
                             <Row>
 
                                 <Col sm={12} style={{ paddingBottom:'4em', paddingTop:'4em'}}>

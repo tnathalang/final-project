@@ -77,8 +77,7 @@ class ProfileMatch extends Component {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 2
+            slidesToScroll: 1
           }
         }
       ]
@@ -87,16 +86,17 @@ class ProfileMatch extends Component {
     return (
       <div>
         <Container >
-          <Row>
+          <Row style={{ backgroundColor: 'rgba(255,255,255,0.5)', borderRadius: '10px' }}>
             <Col style={{ padding: '10px' }}></Col>
             <Col xl={12}>
 
-              <div class="input-group"><h2>Discover Your Matches</h2>
+              <div class="input-group">
 
+                <Button style={{ marginLeft: '20px', marginRight: '20px', marginBottom: '1rem' }} outline color="info" id="toggler">
+                  ▶
+                </Button>
+                <h2>Discover Your Matches</h2>
 
-                <Button style={{ marginLeft: '20px', marginBottom: '1rem' }} outline color="info" id="toggler">
-                  ▽
-              </Button>
               </div>
               {/*Toggle buttons for refreshing the search and/or  inverting the search*/}
               <UncontrolledCollapse toggler="#toggler">
