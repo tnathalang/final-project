@@ -4,6 +4,13 @@
 Are you someone that works in a shared space? A comnpany that recently inherit new employees and not sure how to make them talk to each other? 
 Want to make new friends but is afraid and not sure what to say? Then our app will help you connect with others with similar interesrs as you!
 
+## Screenshots
+!["Screenshot of chatty messages in action!"](https://github.com/tnathalang/Pear-Up-/blob/master/img/Screen%20Shot%202019-04-14%20at%207.46.23%20AM.png?raw=true)
+!["Screenshot of chatty messages in action!"](https://github.com/tnathalang/Pear-Up-/blob/master/img/Screen%20Shot%202019-04-14%20at%207.46.38%20AM.png?raw=true)
+!["Screenshot of chatty messages in action!"](https://github.com/tnathalang/Pear-Up-/blob/master/img/Screen%20Shot%202019-04-14%20at%207.46.51%20AM.png?raw=true)
+!["Screenshot of chatty messages in action!"](https://github.com/tnathalang/Pear-Up-/blob/master/img/Screen%20Shot%202019-04-14%20at%207.47.06%20AM.png?raw=true)
+!["Screenshot of chatty messages in action!"](https://github.com/tnathalang/Pear-Up-/blob/master/img/Screen%20Shot%202019-04-14%20at%207.47.17%20AM.png?raw=true)
+
 ## Functionality
 Register to our app, select your interests, once you're on the landing page, our app will show you a list of people that have common interests as you base on an algorithm on your interests. You can also make a card to invite others to join you in moment of, a quick lunch or coffee meetup with someone new could be fun! 
 
